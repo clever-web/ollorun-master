@@ -84,196 +84,28 @@ s'appuyant sur la technologie de la Blockchain Ozeety et de son propre coin OZTG
   ser_card2_d1: "P.I.L Mobile Node",
   ser_card2_d2: "P.I.L Masternode",
 
-  master_node_title: `Mais qu'est-ce qu'un<span class="grad_text"> Masternode ?</span>`,
-  master_node_desc: `Un MASTERNODE assure l'intégrité des informations enregistrées dans la blockchain. <br /><br />
-  Son rôle est de sauvegarder une copie complète ou partielle du Ledger (le livre de compte global) et participe ainsi à la sécurisation du réseau. <br /><br /> 
-  Le MASTERNODE donne un droit de gouvernance à son propriétaire pour toute décision majeur concernant la blockchain. <br /><br />
-  Les MASTERNODES sont les validateurs de toutes les opérations et contribuent au bon fonctionnement du réseau en assurant la véracité des informations du Ledger <br /><br />
-  Pour ce travail, le MASTERNODE reçoit une récompense en OZTG.<br /><br />
-  C'est ce que nous appelons des «Masternodes Rewards».`,
-  pool_title: `Mais qu'est-ce qu'un<span class="grad_text"> Pool Masternodes ?</span>`,
-  pool_desc: `Un POOL MASTERNODES est un cluster de Masternodes.<br/><br/>
-  Le POOL MASTERNODES donne la possibilité à des tiers de participer au bon fonctionnement du réseau.<br/><br/>
-  Pour cette contribution, le POOL MASTERNODES rétribue des récompenses en OZTG, ceci dans un rapport proportionnel à la participation de chaque membre.<br/><br/>
-  C’est ce que nous appelons des "Masternodes Rewards".`,
-  node_title: `Mais qu'est-ce qu'un<span class="grad_text"> Node ?</span>`,
-  node_desc: `Un NODE participe à l'intégrité des informations enregistrées dans la blockchain. <br /><br />
-  Son rôle est de sauvegarder une copie partielle du Ledger (le livre de compte global) et participe ainsi à la sécurisation du réseau. <br /><br /> 
-  Les NODES sont des points d'enregistrement partiels et assurent la véracité des informations transmises aux Masternodes du réseau. <br /><br />
-  Pour ce travail, le NODE reçoit une récompense en OZTG. <br /><br />
-  C'est ce que nous appelons des « Satking Rewards"`,
+  master_node_title: `Qu'est-ce qu'un<span class="grad_text"> Masternode ?</span>`,
+  master_node_desc: `Un Masternode garantit l'intégrité des informations enregistrées sur la blockchain. Son rôle est de sauvegarder une copie complète ou partielle du grand livre et ainsi de participer à la sécurité du réseau. <br /><br />
+  Un Masternode donne à ses propriétaires le pouvoir de prendre toutes les décisions importantes liées à la blockchain. Il vérifie toutes les transactions et contribue au bon fonctionnement du réseau en assurant l'exactitude des informations du grand livre.  <br /><br /> 
+  En échange de ce travail, le Masternode reçoit des récompenses en OZTG, connues sous le nom de "Masternode Rewards".  <br /><br />
+  *Le gain annuel est fourni à titre indicatif et reflète l'état actuel du marché. Ollorun ne peut garantir son maintien ou sa croissance.<br /><br />`,
+  pool_title: `Qu'est-ce qu'un<span class="grad_text"> Pool Masternodes ?</span>`,
+  pool_desc: `Un Pool Masternodes est un regroupement de Masternodes. <br/><br/>
+  Le Pool Masternodes permet à des tiers de contribuer à la stabilité et à la sécurité du réseau Blockchain.<br/><br/>
+  En échange de leur contribution, les membres du Pool Masternodes sont récompensés en fonction de leur participation. <br/><br/>
+  Ces récompenses sont appelées "Masternode Rewards".`,
+  node_title: `Qu'est-ce qu'un<span class="grad_text"> Node ?</span>`,
+  node_desc: `Un Node contribue à l'intégrité des informations enregistrées sur la blockchain. Son rôle est de sauvegarder une copie partielle du grand livre et ainsi de participer à la sécurisation du réseau.  <br /><br />
+  Les Nodes sont des points d'enregistrement partiels qui assurent l'exactitude des informations transmises aux Masternodes du réseau.  <br /><br /> 
+  En échange de ce travail, le Node reçoit des récompenses en OZTG, connues sous le nom de "Staking Rewards". <br /><br />
+  *Le gain annuel est fourni à titre indicatif et reflète l'état actuel du marché. Ollorun ne peut garantir son maintien ou sa croissance.<br /><br />`,
   contact_title: `Rejoignez notre<span class="grad_text"> Communauté</span>`,
   FOOTER_TEXT2: `© OLLORUN FINANCE LTD, tous droits réservés.`,
   ollorun_official: `Rejoignez notre Telegram`,
   legal_info: "Mentions légales",
   UseofCookies: "Utilisation des cookies",
   PrivacyPolicy: "Politique de confidentialité ",
-  TermPageContent: `<h4>Introduction</h4>
-    <p>
-    Bienvenue sur le site www.ollorun.com (le "Site"), détenu et exploité par Ollorun Finance
-LTD.
-      <br />
-      <br />
-      Ollorun Finance LTD s'engage à fournir une expérience sûre et positive à tous les
-utilisateurs de notre site. Pour nous aider à le faire, nous avons besoin que vous suiviez
-quelques règles de base lorsque vous êtes ici. Ne vous inquiétez pas, ce n'est pas très
-compliqué.
-      <br />
-      <br />
-      Aussi, en accédant à www.ollorun.com, vous acceptez les conditions d'utilisation
-suivantes. Ces conditions d'utilisation sont en vigueur depuis janvier 2017.
-    </p>
-    <br />
-    <br />
-    <h4>Utilisation de www.ollorun.com</h4>
-    <p>
-    Vous acceptez www.ollorun.com "tel quel" et choisissez de l'utiliser à vos propres
-    risques. Malgré les interdictions ci-dessous, www.ollorun.com peut contenir des
-    éléments inexacts, inappropriés ou éventuellement offensants, et nous n'assumons
-    aucune responsabilité à cet égard.
-      <br />
-      <br />
-      Lorsque vous utilisez notre site, vous devez vous conformer à toutes les lois applicables,
-y compris les lois fédérales, étatiques et locales, les lois de votre juridiction et les lois
-concernant la transmission de données techniques.
-    </p>
-    <br />
-    <p>Vous vous engagez également à ne pas:</p>
-    <br />
-    <ul>
-      <li>
-      Afficher, envoyer, recevoir ou stocker du contenu obscène ou inapproprié.
-      </li>
-      <li>
-      Menacer, harceler, traquer, diffamer ou frauder toute personne ou entité.
-      </li>
-      <li>
-      Violer les droits d'auteur, les marques commerciales ou toute autre loi sur la
-      propriété intellectuelle.
-      </li>
-      <li>
-      Faire de la publicité, promouvoir, approuver ou commercialiser, directement ou
-      indirectement, des produits, services, solutions ou autres technologies
-      commerciales de tiers.
-      </li>
-      <li>
-      Tenter de collecter, stocker ou publier des informations personnelles identifiables
-      (a) à l'insu du propriétaire et sans son consentement ou (b) d'un mineur de moins
-      de treize (13) ans en toute circonstance.
-      </li>
-      <li>
-      Distribuer des courriels de masse ou d'autres messages, des promotions, des
-      publicités ou des sollicitations non désirés, non sollicités ou harcelants ("spam").
-      </li>
-      <li>
-      Envoyer des informations d'identification de la source trompeuses ou fausses, y
-      compris le "spoofing" ou le "phishing".
-      </li>
-      <li>
-      Accéder ou utiliser une application, un système, un service, un outil, des
-      données, un compte, un réseau ou un contenu sans autorisation ou à des fins
-      non prévues.
-      </li>
-      <li>
-      Désactiver, perturber, contourner, interférer avec ou violer de toute autre manière
-      la sécurité du Site.
-      </li>
-      <li>
-      Attaquer, abuser, interférer avec, intercepter, perturber ou exploiter tout
-      utilisateur, système ou service, quel que soit le moyen utilisé et nonobstant toute
-      disposition contraire des présentes Conditions, y compris, mais sans s'y limiter,
-      le déni de service (DoS), la surveillance, le crawling, le spamming, l'utilisation de
-      bots ou de scripts ou la distribution de logiciels malveillants (tels que des virus,
-      des chevaux de Troie, des vers, des logiciels espions ou des logiciels
-      publicitaires).
-      </li>
-    </ul>
-    <p>
-    S'engager dans ou promouvoir toute activité illégale ou criminelle telle que la
-    pornographie enfantine, les jeux d'argent ou le piratage.
-      <br />
-      <br />
-      Autoriser, permettre, inciter ou encourager un tiers à faire l'une des choses
-susmentionnées.
-Si vous violez ces conditions, votre accès au site peut être résilié immédiatement et
-sans préavis.
-      <br />
-      <br />
-      En d'autres termes, soyez respectueux et utilisez le site conformément à son objectif.
-    </p>
-    <br />
-    <br />
-    <h4>Abus de www.ollorun.com</h4>
-    <p>
-    Nous pouvons limiter ou interrompre notre service, supprimer le contenu hébergé et
-    prendre des mesures techniques et juridiques pour empêcher les utilisateurs d'accéder à
-    www.ollorun.com si nous pensons qu'ils créent des problèmes ou agissent de manière
-    incompatible avec la lettre ou l'esprit de nos politiques. Veuillez signaler les problèmes,
-    le contenu offensant et les violations des politiques en nous envoyant un courriel à
-    contact@ollorun.com.
-    </p>
-    <br />
-    <br />
-    <h4>Responsabilité</h4>
-    <p>
-    Dans la mesure où la loi le permet, nous déclinons expressément toutes les garanties,
-    représentations et conditions, expresses ou implicites, y compris celles de qualité, de
-    qualité marchande, de durabilité, d'adéquation à un usage particulier et celles découlant
-    de la loi. Nous ne sommes pas responsables de toute perte, qu'il s'agisse d'argent (y
-    compris les bénéfices), de clientèle ou de réputation, ou de tout dommage spécial,
-    indirect ou consécutif résultant de votre utilisation de www.ollorun.com, même si vous
-    nous en informez ou si nous pouvions raisonnablement prévoir la possibilité que de tels
-    dommages se produisent. Certaines juridictions n'autorisent pas l'exonération degaranties ou l'exclusion de dommages, de sorte que ces exonérations et exclusions
-    peuvent ne pas s'appliquer à vous. En dépit du paragraphe précédent, si notre
-    responsabilité est reconnue, notre responsabilité envers vous ou tout tiers (que ce soit
-    dans le cadre d'un contrat, d'un délit, d'une négligence, d'une responsabilité délictuelle
-    stricte, d'une loi ou autre) est limitée à cinquante dollars américains (50 $).
-    </p>
-    <br />
-    <br />
-    <h4>Indemnisation</h4>
-    <p>
-    Vous nous indemniserez et nous tiendrez à l'écart (ainsi que nos dirigeants,
-        administrateurs, agents, filiales, coentreprises et employés) de toute réclamation ou
-        demande, y compris les honoraires d'avocat raisonnables, présentée par un tiers en
-        raison de, ou découlant de votre violation du présent accord, ou de votre violation de
-        toute loi ou des droits d'un tiers.
-    </p>
-    <br />
-    <br />
-    <h4>Informations personnelles</h4>
-    <p>
-    En utilisant www.ollorun.com, vous acceptez la collecte, le transfert, le stockage et
-    l'utilisation de vos informations personnelles par Ollorun Finance LTD sur des serveurs
-    situés au Royaume-Uni, comme décrit plus en détail dans notre politique de
-    confidentialité.
-    </p>
-    <br />
-    <br />
-    <h4>Généralités</h4>
-    <p>
-    Ces conditions et les autres politiques affichées sur www.ollorun.com constituent
-    l'intégralité de l'accord entre www.ollorun.com et vous, remplaçant toute partie
-    contradictoire de tout accord antérieur. Cet accord est régi par les lois du Royaume-Uni,
-    telles qu'elles s'appliquent aux accords conclus et devant être exécutés entièrement au
-    Royaume-Uni, entre les résidents de l'UE, sans égard aux dispositions relatives aux
-    conflits de lois. Vous acceptez que toute réclamation ou tout litige que vous pourriez
-    avoir contre Ollorun Finance LTD soit résolu par un tribunal situé à Londres, au
-    Royaume-Uni. Si nous n'appliquons pas une disposition particulière, nous ne renonçons
-    pas à notre droit de le faire plus tard. Si un tribunal annule l'une de ces conditions, les
-    autres conditions resteront en vigueur. Nous pouvons céder automatiquement le présent
-    contrat à notre seule discrétion, conformément à la clause de notification ci-dessous. À
-    l'exception du signalement des violations de la politique et des atteintes à la propriété
-    intellectuelle, toute notification légale que vous nous adressez doit être signifiée à l'agent
-    national enregistré de Ollorun Finance LTD. Nous vous enverrons les avis par
-    l'intermédiaire de l'adresse électronique que vous avez fournie, ou par courrier
-    recommandé à l'adresse que vous avez fournie. Les avis envoyés par courrier
-    recommandé seront considérés comme reçus cinq jours après la date d'envoi. Nous
-    pouvons mettre à jour ces conditions à tout moment, les mises à jour prenant effet 30
-    jours après leur publication initiale sur le site. Aucune autre modification des présentes
-    conditions ne sera effective si elle n'est pas faite par écrit et signée par les utilisateurs et
-    par nous.
-    </p>`,
+  TermPageContent: ``,
   PrivacyPageContent: `<p>
   Internet est un outil extraordinaire. Il a le pouvoir de changer notre façon de vivre, et nous commençons à
   voir ce potentiel aujourd'hui. En quelques clics de souris, vous pouvez suivre l'actualité, rechercher des

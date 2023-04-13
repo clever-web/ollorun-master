@@ -54,14 +54,14 @@ const Service = ({ data, index, flexDirection }) => {
                                                 :
                                                 index === 1 ?
                                                     <Box component="img" className="finance-service-img" src="/assets/icons/nodes/Masternode.svg" width="1.5rem" />
-                                                    : <Box component="img" className="finance-service-img" src="/assets/icons/nodes/Pool Masternodes.svg" width="1.5rem" />
+                                                    : <Box component="img" className="finance-service-img" src="/assets/icons/nodes/Pool Masternodes.svg" width="1.5rem"/>
                                             }
                                             <Box
                                                 className="finance-service-btn-text"
                                                 component="p"
                                                 sx={{
                                                     textTransform: "capitalize",
-                                                    fontSize: 14,
+                                                    fontSize: "clamp(1rem, 1vw, 1.5rem)",
                                                     fontWeight: "500"
                                                 }}
                                             >
@@ -108,7 +108,7 @@ const Service = ({ data, index, flexDirection }) => {
                                     // autoPlay
                                     style={{
                                         width: "100%",
-                                        marginTop: '-25px'
+                                        marginTop: '-80px'
                                     }}
                                     alt="URL"
                                 />
@@ -157,7 +157,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 component="p"
                                                 sx={{
                                                     textTransform: "capitalize",
-                                                    fontSize: 14,
+                                                    fontSize: "clamp(1rem, 1vw, 1.5rem)",
                                                     fontWeight: "500"
                                                 }}
                                             >
@@ -178,7 +178,7 @@ const Service = ({ data, index, flexDirection }) => {
                                         />
                                         <Box component="p" sx={{
                                             my: 2,
-                                            fontSize: "clamp(1rem, 2vw, 1.5rem)",
+                                            fontSize: "clamp(1rem, 1vw, 1.5rem)",
                                         }}>
                                             {translate(each.text)}
                                         </Box>
@@ -213,7 +213,8 @@ export default function FinanceService({ data }) {
                     component="h1"
                     sx={{
                         // textTransform: "capitalize",
-                        fontSize: "clamp(1.5rem, 3vw, 3rem)"
+                        fontSize: "clamp(1.5rem, 3vw, 3rem)",
+                        color: "#ffffff"
                     }}
                 >
                     {translate("our_solutions")}
@@ -224,7 +225,7 @@ export default function FinanceService({ data }) {
             <Service data={FinanceServiceConfig[1]} index={1} flexDirection="column-reverse" />
             <Service data={FinanceServiceConfig[2]} index={2} flexDirection="column" />
 
-            <BoxStyle sx={{ pb: { xs: 1, sm: 3 } }}>
+            {/* <BoxStyle sx={{ pb: { xs: 1, sm: 3 } }}>
                 <Typography
                     sx={{
                         fontSize: "clamp(1.5rem, 3vw, 3rem)"
@@ -232,8 +233,8 @@ export default function FinanceService({ data }) {
                 >
                     <span dangerouslySetInnerHTML={{__html: translate("defi_text")}}/>
                 </Typography>
-            </BoxStyle>
-            <BoxStyle sx={{ pb: { xs: 1, sm: 5 } }}>
+            </BoxStyle> */}
+            {/* <BoxStyle sx={{ pb: { xs: 1, sm: 5 } }}>
                 <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                     maxWidth: "1200px",
                     margin: "0px auto",
@@ -271,7 +272,7 @@ export default function FinanceService({ data }) {
                         </Box>
                     </Stack>
                 </Stack>
-            </BoxStyle>
+            </BoxStyle> */}
             <ClientModal modalOpen={modalOpen} handleModalClose={handleModalClose} />
         </Box>
     )

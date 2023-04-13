@@ -19,6 +19,10 @@ import { API_URL } from "../../config";
 import TelegramModal from "../modal/TelegramModal";
 // ----------------------------------------------------------------------
 
+const varSmall = {
+    hover: { scale: 1.05 }
+}
+
 const BoxStyle = styled(Box)({
     maxWidth: "1288px",
     margin: "auto",
@@ -172,21 +176,32 @@ export default function HomeHero() {
                     </Box>
                     <Box sx={{ zIndex: 2, position: { xs: "relative", sm: "relative" }, bottom: { xs: "unset", sm: 0 }, pr: "1rem" }}>
                         <Link to="/about">
-                            <WhiteBtn
-                                text={"why_ollorun"}
-                                icon="arrowright"
-                                style={{
-                                    px: 5,
-                                    py: 1,
-                                    backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
-                                    fontSize: "clamp(1.5rem, 1vw, 1rem)",
-                                    boxShadow: "none",
-                                    "&:hover": {
-                                        background: "unset"
-                                    }
+                            <Box
+                                component={m.div}
+                                whileTap="tap"
+                                whileHover="hover"
+                                variants={varSmall}
+                                sx={{
+                                    display: 'inline-flex'
                                 }}
-                            />
-                        </Link> 
+                            >
+                                <WhiteBtn
+                                    text={"why_ollorun"}
+                                    icon="arrowright"
+                                    style={{
+                                        px: 5,
+                                        py: 1,
+                                        backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
+                                        border: "none",
+                                        fontSize: "clamp(1.5rem, 1vw, 1rem)",
+                                        boxShadow: "none",
+                                        "&:hover": {
+                                            background: "linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)"
+                                        }
+                                    }}
+                                />
+                            </Box>
+                        </Link>
                     </Box>
                     <Box sx={{ zIndex: 2, position: { xs: "absolute", sm: "relative" }, bottom: { xs: "unset", sm: 0 }, pr: "1.5rem" }}>
                         <Box sx={{ mt: "10%" }}>
@@ -230,7 +245,17 @@ export default function HomeHero() {
                                         }}
                                     />
                                 </Box>
-                                <Box onClick={onRegisterForNewsLetter}>
+                                {/* <Box onClick={onRegisterForNewsLetter}> */}
+                                <Box
+                                    onClick={onRegisterForNewsLetter}
+                                    component={m.div}
+                                    whileTap="tap"
+                                    whileHover="hover"
+                                    variants= { varSmall }
+                                    sx={{
+                                        display: 'inline-flex'
+                                    }}
+                                >
                                     <WhiteBtn
                                         text={"go"}
                                         icon="arrowright"
@@ -249,6 +274,7 @@ export default function HomeHero() {
                                         }}
                                     />
                                 </Box>
+                                {/* </Box> */}
                             </Box>
                         </Box>
                     </Box>

@@ -26,12 +26,7 @@ export default function SimpleBuyAnimation({ isNavOpen }) {
           className="flip-card-front"
           sx={{ p: 0.5, borderRadius: "50%", }}
         >
-          <Box
-            component="img"
-            src="/assets/images/oztg_hexagon.svg"
-            alt="ollorun_animation_img"
-            sx={{ width: "40px" }}
-          />
+          <ShoppingCartIcon sx={{ fontSize: "34px", color: "#222" }} />
         </Box>
         <Box
           className="flip-card-back"

@@ -66,7 +66,7 @@ export default function CertifiedPartnerPage() {
                         <Box sx={{ mt: 3 }}>
                             {/* Tab */}
                             <TabContext value={value}>
-                                <Box sx={{ borderColor: "#FFFFFF" }}>
+                                {/* <Box sx={{ borderColor: "#FFFFFF" }}>
                                     <TabList
                                         onChange={handleChange}
                                         aria-label="lab API tabs example"
@@ -83,7 +83,7 @@ export default function CertifiedPartnerPage() {
                                         <Tab label={translate("advisors")} value="1" />
                                         <Tab label={translate("consulting_offices")} value="2" sx={{ textTransform: "unset" }} />
                                     </TabList>
-                                </Box>
+                                </Box> */}
                                 <Box sx={{ my: 3 }}>
                                     <TabPanel value="1">
                                         <Advisor />

@@ -8,50 +8,53 @@ import { MotionViewport, varFade, varZoom } from "../animate";
 import useLocales from "../../hooks/useLocales";
 
 // ----------------------------------------------------------------------
-const img1 = '/assets/images/appstore1.png'
-const img2 = '/assets/images/appstore.svg'
-const img3 = '/assets/images/googleplay.svg'
-const img4 = '/assets/images/googleplay.png'
+// const img1 = '/assets/images/appstore1.png'
+// const img2 = '/assets/images/appstore.svg'
+// const img3 = '/assets/images/googleplay.svg'
+// const img4 = '/assets/images/googleplay.png'
 
-const ImageToggleOnMouseOver = ({primaryImg, secondaryImg}) => {
-  const imageRef = useRef(null);
+// const ImageToggleOnMouseOver = ({primaryImg, secondaryImg}) => {
+//   const imageRef = useRef(null);
 
-  return (
-    <img 
-      onMouseOver={() => {
-        imageRef.current.src = secondaryImg;
-      }}
-      onMouseOut={() => {
-        imageRef.current.src= primaryImg;
-      }}
-      src={primaryImg} 
-      alt=""
-      ref={imageRef}
-    />
-  )
-}
+//   return (
+//     <img 
+//       onMouseOver={() => {
+//         imageRef.current.src = secondaryImg;
+//       }}
+//       onMouseOut={() => {
+//         imageRef.current.src= primaryImg;
+//       }}
+//       src={primaryImg} 
+//       alt=""
+//       ref={imageRef}
+//     />
+//   )
+// }
 
-const ImageChangeAppleOnMouseOver = () => {
-  return (
-    <div>
-      <ImageToggleOnMouseOver
-        primaryImg={img1}
-        secondaryImg={img2}
-        alt="AppleIcon" />
-    </div>
-  )
-}
+// const ImageChangeAppleOnMouseOver = () => {
+//   return (
+//     <div>
+//       <ImageToggleOnMouseOver
+//         primaryImg={img1}
+//         secondaryImg={img2}
+//         alt="AppleIcon" />
+//     </div>
+//   )
+// }
 
-const ImageChangeGoogleOnMouseOver = () => {
-  return (
-    <div>
-      <ImageToggleOnMouseOver
-        primaryImg={img3}
-        secondaryImg={img4}
-        alt="GoogleIcon" />
-    </div>
-  )
-}
+// const ImageChangeGoogleOnMouseOver = () => {
+//   return (
+//     <div>
+//       <ImageToggleOnMouseOver
+//         primaryImg={img3}
+//         secondaryImg={img4}
+//         alt="GoogleIcon" />
+//     </div>
+//   )
+// }
+const varSmall = {
+  hover: { scale: 1.05 }
+};
 
 const BoxStyle = styled(Box)({
   width: "100%",
@@ -108,7 +111,7 @@ export default function AppStore() {
                     {translate("appstore_section_text3")}
                   </Typography>
                 </m.div>
-                <m.div variants={varFade().inUp}>
+                <m.div variants={varFade().inUp} >
                   <Stack direction="row">
                     <LinkStyle
                       href="https://apps.apple.com/es/app/ozeety/id1539277391"
@@ -117,24 +120,50 @@ export default function AppStore() {
                       }}
                       target="_blank"
                     >
-                      {/* <Box
-                        component="img"
-                        src="/assets/images/appstore.svg"
-                        width="220px"
-                      /> */}
-                      <ImageChangeAppleOnMouseOver />
+                      <Box
+                        component={m.div}
+                        whileTap="tap"
+                        whileHover="hover"
+                        variants={varSmall}
+                        sx={{
+                          display: 'inline-flex'
+                        }}
+                      >
+                        <Box
+                          component="img"
+                          src="/assets/images/appstore.svg"
+                          width="220px"
+                        />  
+                      </Box>
+                      
+                      {/* <ImageChangeAppleOnMouseOver /> */}
                     </LinkStyle>
                     <LinkStyle
                       href="https://play.google.com/store/apps/details?id=ozeety.sapian.flash&hl=fr&gl=US"
                       target="_blank"
                     >
-                      {/* <Box
-                        component="img"
-                        src="/assets/images/googleplay.svg"
-                        width="220px"
-                        height="100%"
-                      /> */}
-                      <ImageChangeGoogleOnMouseOver/>
+                      
+                      <Box
+                        component={m.div}
+                        whileTap="tap"
+                        whileHover="hover"
+                        variants={varSmall}
+                        // variants={(isSmall && varSmall) || (isLarge && varLarge) || varMedium}
+                        sx={{
+                          display: 'inline-flex'
+                        }}
+                      >
+                        <Box
+                          component="img"
+                          src="/assets/images/googleplay.svg"
+                          width="220px"
+                          height="100%"
+                        />
+                      </Box>
+                      {/* a[data-role]:hover, button[data-role]:hover {
+                      transform: scale(1.05);
+                      } */}
+                      {/* <ImageChangeGoogleOnMouseOver/> */}
                     </LinkStyle>
                   </Stack>
                 </m.div>

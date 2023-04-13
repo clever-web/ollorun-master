@@ -177,12 +177,12 @@ export default function About({ data }) {
             <Service data={AboutConfig[0]} index={0} flexDirection="column" />
             <Service data={AboutConfig[1]} index={1} flexDirection="column-reverse" />
             <Service data={AboutConfig[2]} index={2} flexDirection="column" />
-            <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
+            {/* <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                 maxWidth: "1530px",
                 margin: "0px auto",
                 mt: 10
             }}>
-                {/* <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', flexWrap: 'wrap' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', flexWrap: 'wrap' }}>
                     <Box sx={{ width: '1.5em', height: '1.5em', borderRadius: '50%', backgroundColor: '#ca64ea', ml: 9 }}></Box>
                     <Box sx={{ width: '1.5em', height: '1.5em', borderRadius: '50%', backgroundColor: '#0e0b64', ml: 1, mr: 10 }}></Box>
                     <Typography
@@ -195,9 +195,9 @@ export default function About({ data }) {
                     >
                         www.ollorun.com
                     </Typography>
-                </Box> */}
+                </Box>
                 <Box sx={{ width: '100%', height: '0.1em', alignItems: 'center', backgroundColor: 'white', borderRadius: "20%" }}></Box>
-            </Stack>
+            </Stack> */}
         </Box>
     )
 }

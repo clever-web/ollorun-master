@@ -64,9 +64,7 @@ export default function EventsPage() {
                                 display: "flex",
                                 justifyContent: "space-between",
                                 gap: { xs: 1, sm: 10 },
-                                borderBottom: "1px solid white",
-                                // mt: 5,
-                                // mb: 15,
+                                // borderBottom: "1px solid white",
                                 alignItems: "center",
                                 pb: { xs: 3, sm: 3 }
                             }}>

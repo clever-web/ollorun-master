@@ -45,7 +45,7 @@ export default function Footer() {
   const footerData = [
     {
       text: "legal_info",
-      url: "/assets/docs/Legal_information.pdf",
+      url: "legal",
     },
     {
       text: "PrivacyPolicy",

@@ -70,6 +70,7 @@ export default function RegisterPopover({ isNav }) {
         component="p"
         sx={{
           background: "linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)",
+          border: !isNav ? "1px #ffffff solid" : "1px #000000 solid",
           borderRadius: "0.75rem",
           padding: !isNav ? { md: "0.5rem 2rem", xs: "0.5rem 1rem" } : "0.5rem 2rem",
           color: "#000000 !important",
@@ -80,7 +81,10 @@ export default function RegisterPopover({ isNav }) {
           },
           textAlign: "center",
         }}
-        onClick={handleOpen}
+        // onClick={handleOpen}
+        // key={index}
+        onClick={() => getStarted(2)}
+        // if the key is 1, the client modal opened.
       >
         {translate("sign_up")}
       </Box>

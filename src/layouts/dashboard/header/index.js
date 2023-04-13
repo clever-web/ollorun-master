@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Divider, Stack } from "@mui/material";
 import { styled } from "@mui/system";
+import { m } from "framer-motion";
 // components
 import Logo from "../../../components/Logo";
 import LanguagePopover from "./LanguagePopover";
@@ -16,6 +17,11 @@ import LoginPopover from "./LoginPopover";
 import RegisterPopover from "./RegisterPopover";
 import MenuIcon from "../../../components/MenuIcon";
 import CloseIcon from '../../../components/CloseIcon';
+
+const varSmall = {
+  hover: { scale: 1.05 }
+};
+
 
 const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
   const [navOpen, setNavOpen] = useState("");
@@ -181,8 +187,32 @@ const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
           </Box>
           <Stack direction="row" alignItems="center">
             <Box sx={{ display: { xs: "none", sm: "flex" } }}>
-              <LoginPopover />
-              <RegisterPopover />
+              <Box
+                component={m.div}
+                whileTap="tap"
+                whileHover="hover"
+                variants={varSmall}
+                // variants={(isSmall && varSmall) || (isLarge && varLarge) || varMedium}
+                sx={{
+                  display: 'inline-flex'
+                }}
+              >
+                <LoginPopover />
+              </Box>
+              <Box
+                component={m.div}
+                whileTap="tap"
+                whileHover="hover"
+                variants={varSmall}
+                // variants={(isSmall && varSmall) || (isLarge && varLarge) || varMedium}
+                sx={{
+                  display: 'inline-flex'
+                }}
+              >
+                <RegisterPopover />
+              </Box>
+              {/* <LoginPopover />
+              <RegisterPopover /> */}
             </Box>
             <LanguagePopover />
 

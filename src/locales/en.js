@@ -83,24 +83,36 @@ const en = {
   ser_card2_d1: "P.I.L Mobile Node",
   ser_card2_d2: "P.I.L Masternode",
 
-  master_node_title: `But what is a<span class="grad_text"> Masternode?</span><br /><br />`,
-  master_node_desc: `MASTERNODE guarantees the integrity of information recorded on the blockchain.<br/><br/>
-  Its role is to store a full or partial copy of the Ledger (global Ledger) and participate in the security of the network.<br/><br/>
-  MASTERNODE gives its owners decision-making power over all important decisions related to the blockchain.<br/><br/>
-  MASTERNODE is the verifier of all transactions and contributes to the smooth operation of the network by ensuring the accuracy of Ledger information.<br/><br/>
-  For this work, MASTERNODE will be rewarded in OZTG.<br/><br/>
-  This is what we call "Masternodes Rewards".`,
-  pool_title: `But what is a<span class="grad_text"> Pool Masternodes?</span><br /><br />`,
-  pool_desc: `POOL MASTERNODES is a cluster of Masternodes.<br/><br/>
-  The POOL MASTERNODES allows third parties to contribute to the smooth operation of the network.<br/><br/>
-  For this investment, the POOL MASTERNODE will reward OZTG in proportion to each member's participation.<br/><br/>
-  This is called " Masternodes Rewards"`,
+  master_node_title: `What is a<span class="grad_text"> Masternode?</span><br /><br />`,
+  master_node_desc: `A Masternode guarantees the integrity of the information recorded on the
+  blockchain. Its role is to save a full or partial copy of the global ledger and thus
+  participate in securing the network.<br/><br/>
+  A Masternode gives its owners the power to make all important decisions related
+  to the blockchain. It verifies all transactions and contributes to the smooth
+  operation of the network by ensuring the accuracy of ledger information.<br/><br/>
+  In exchange for this work, the Masternode receives rewards in OZTG, known as
+  "Masternode Rewards".<br/><br/>
+  *The annual gain is provided as an indication and reflects the current state of the
+  market. Ollorun cannot guarantee its maintenance or growth.<br/><br/>`,
+  pool_title: `What is a<span class="grad_text"> Pool Masternodes?</span><br /><br />`,
+  pool_desc: `A Pool Masternodes is a cluster of Masternodes.<br/><br/>
+  The Pool of Masternodes allows third parties to contribute to the smooth
+  operation of the network.<br/><br/>
+  In exchange for this work, the Pool Masternodes will reward members in
+  proportion to their participation.<br/><br/>
+  This is called " Masternodes Rewards"<br/><br/>
+  *The annual gain is provided as an indication and reflects the current state
+  of the market. Ollorun cannot guarantee its maintenance or growth.`,
   node_title: `What is a<span class="grad_text"> Node?</span><br /><br />`,
-  node_desc: `A NODE contributes to the integrity of the information recorded on the blockchain. <br /><br /> 
-  Its role is to save a partial copy of the Ledger (global Ledger) and thus participate in the security of the network. <br /><br />
-  The NODES are partial recording points and ensure the veracity of the information transmitted to the Masternodes of the network <br /><br />
-  For this work, the NODE receives a reward in OZTG. <br /><br />
-  This is what we call "Staking Rewards" `,
+  node_desc: `A Node contributes to the integrity of the information recorded on the
+  blockchain.<br /> Its role is to save a partial copy of the global ledger and thus
+  participate in securing the network.<br /><br />
+  Nodes are partial recording points that ensure the accuracy of
+  information transmitted to the Masternodes of the network. <br /><br />
+  In exchange for this work, the Node receives rewards in OZTG, known as<br />
+  "Staking Rewards". <br /><br />
+  *The annual gain is provided as an indication and reflects the current state
+  of the market. Ollorun cannot guarantee its maintenance or growth. `,
   contact_title: `Join Our<span class="grad_text"> Community</span>`,
   FOOTER_TEXT2: `© OLLORUN FINANCE LTD, All Rights Reserved.`,
   ollorun_official: `Ollorun Official`,
@@ -108,183 +120,36 @@ const en = {
   legal_info: "Legal Information",
   UseofCookies: "Use of cookies",
   PrivacyPolicy: "Privacy Policy",
-  TermPageContent: `<h4>Introduction</h4>
+  TermPageContent: `<h4>Editing the Site</h4>
   <p>
-    Welcome to www.ollorun.com (the "Site"), owned and operated by
-    Ollorun Finance LTD.
+    Company name: Ollorun Finance LTD
     <br />
     <br />
-    Ollorun Finance LTD is committed to providing a safe and
-    positive experience to all users on our Site. To help us do
-    that, we need you to follow a few basic rules when you’re here.
-    Don’t worry, it’s not very complicated.
+    Registration number: 12660658
     <br />
     <br />
-    Also, by accessing www.ollorun.com you agree to the following
-    Terms of Use. These Terms of Use are effective as of January
-    2017.
+    Registration place: United Kingdom
+    <br />
+    <br />
+    Registration address: 45 Albemarle Street, London, UK, W1S 4JL
   </p>
   <br />
   <br />
-  <h4>Using www.ollorun.com</h4>
+  <h4>Contact us</h4>
   <p>
-    You accept www.ollorun.com "as-is" and choose to use it at your
-    own risk. Despite the prohibitions below, www.ollorun.com may
-    contain inaccurate, inappropriate, or possibly offensive
-    material, and we assume no responsibility or liability for such
-    material.
+    Customer service: Write to us here 
     <br />
     <br />
-    When using our Site, you must comply with all applicable laws,
-    including federal, state, and local laws, the laws of your
-    jurisdiction, and laws regarding the transmission of technical
-    data.
-  </p>
-  <br />
-  <p>You also agree not to:</p>
-  <br />
-  <ul>
-    <li>
-      Display, send, receive, or store obscene or inappropriate content.
-    </li>
-    <li>
-      Threaten, harass, stalk, defame, or defraud any person or
-      entity.
-    </li>
-    <li>
-      Violate copyright, trademark, or other intellectual property
-      laws.
-    </li>
-    <li>
-      Advertise, promote, endorse, or market, directly or
-      indirectly, any third-party commercial products, services,
-      solutions, or other technologies.
-    </li>
-    <li>
-      Attempt to collect, store, or publish personally identifiable
-      information (a) without the owner’s knowledge and consent or
-      (b) of a minor under the age of thirteen (13) in any
-      circumstance.
-    </li>
-    <li>
-      Distribute unwanted, unsolicited, or harassing mass email or
-      other messages, promotions, advertising, or solicitations
-      (“spam”).
-    </li>
-    <li>
-      Send deceptive or false source-identifying information,
-      including “spoofing” or “phishing”.
-    </li>
-    <li>
-      Access or use any application, system, service, tool, data,
-      account, network, or content without authorization or for
-      unintended purposes.
-    </li>
-    <li>
-      Disable, disrupt, circumvent, interfere with, or otherwise
-      violate the security of the Site.
-    </li>
-    <li>
-      Attack, abuse, interfere with, intercept, disrupt, or exploit
-      any users, systems, or services, regardless of how
-      accomplished and notwithstanding anything to the contrary in
-      these Terms, including but not limited to Denial of Service
-      (DoS), monitoring, crawling, spamming, using bots or scripts,
-      or distributing malware (such as viruses, Trojan horses,
-      worms, spyware, or adware).
-    </li>
-  </ul>
-  <p>
-    Engage in or promote any illegal or criminal activity such as
-    child pornography, gambling, or piracy.
+    Commercial team: Write to us here
     <br />
     <br />
-    Authorize, permit, enable, induce, or encourage any third party
-    to do any of the above. If you violate these Terms, your access
-    to the Site may be terminated immediately and without notice.
-    <br />
-    <br />
-    In other words, just be respectful and use the Site for its
-    intended purpose.
+    Apply to become an advisor: Write to us here 
   </p>
   <br />
   <br />
-  <h4>Abusing www.ollorun.com</h4>
+  <h4>Hosting company</h4>
   <p>
-    We may limit or terminate our service, remove hosted content and
-    take technical and legal steps to keep users off www.ollorun.com
-    if we think they are creating problems or acting inconsistently
-    with the letter or spirit of our policies. Please report
-    problems, offensive content and policy violations by emailing us
-    at contact@ollorun.com.
-  </p>
-  <br />
-  <br />
-  <h4>Liability</h4>
-  <p>
-    To the extent legally permitted we expressly disclaim all
-    warranties, representations and conditions, express or implied,
-    including those of quality, merchantability, merchantable
-    quality, durability, fitness for a particular purpose and those
-    arising by statute. We are not liable for any loss, whether of
-    money (including profit), goodwill, or reputation, or any
-    special, indirect, or consequential damages arising out of your
-    use of www.ollorun.com even if you advise us or we could
-    reasonably foresee the possibility of any such damage occurring.
-    Some jurisdictions do not allow the disclaimer of warranties or
-    exclusion of damages, so such disclaimers and exclusions may not
-    apply to you. Despite the previous paragraph, if we are found to
-    be liable, our liability to you or any third party (whether in
-    contract, tort, negligence, strict liability in tort, by statute
-    or otherwise) is limited to fifty US dollars ($50).
-  </p>
-  <br />
-  <br />
-  <h4>Indemnity</h4>
-  <p>
-    You will indemnify and hold us (and our officers, directors,
-    agents, subsidiaries, joint ventures, and employees) harmless
-    from any claim or demand, including reasonable attorneys' fees,
-    made by any third party due to or arising out of your breach of
-    this Agreement, or your violation of any law or the rights of a
-    third party.
-  </p>
-  <br />
-  <br />
-  <h4>Personal Information</h4>
-  <p>
-    By using www.ollorun.com, you agree to the collection, transfer,
-    storage and use of your personal information by Ollorun Finance
-    LTD on servers located in U.K, as further described in our
-    privacy policy.
-  </p>
-  <br />
-  <br />
-  <h4>General</h4>
-  <p>
-    These terms and the other policies posted on www.ollorun.com
-    constitute the entire agreement between www.ollorun.com and you,
-    superseding any conflicting parts of any prior agreements. This
-    agreement is governed by the laws of the UK, as they apply to
-    agreements entered into and to be performed entirely within UK,
-    between EU residents, without regard to conflict of law
-    provisions. You agree that any claim or dispute you may have
-    against Ollorun Finance LTD must be resolved by a court located
-    in London, UK. If we don't enforce any particular provision, we
-    are not waiving our right to do so later. If a court strikes any
-    of these terms, the remaining terms will survive. We may
-    automatically assign this agreement in our sole discretion in
-    accordance with the notice provision below. Except for reporting
-    policy violations and intellectual property infringements, any
-    legal notices from you to us shall be served on Ollorun Finance
-    LTD's national registered agent. We will send notices to you via
-    the email address that you provide, or by registered mail to the
-    address you provide. Notices sent by registered mail will be
-    deemed received five days following the date of mailing. We may
-    update these terms at any time, with updates taking effect 30
-    days after they are initially posted on the Site. No other
-    amendment to these terms will be effective unless made in
-    writing, signed by users and by us.
+    Ollorun website is provided by Sapian Grou
   </p>`,
   PrivacyPageContent: `<p>
   The Internet is an amazing tool. It has the power to change the

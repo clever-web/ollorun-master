@@ -23,13 +23,13 @@ const BoxStyle = styled(Box)({
   p: {
     color: "#828082",
   },
-  ul: {
-    paddingInlineStart: "50px",
-  },
-  li: {
-    color: "#828082",
-    marginBottom: "16px",
-  },
+  // ul: {
+  //   paddingInlineStart: "50px",
+  // },
+  // li: {
+  //   color: "#828082",
+  //   marginBottom: "16px",
+  // },
 });
 
 // ----------------------------------------------------------------------
@@ -55,7 +55,6 @@ export default function LegalInfo() {
               mt={4}
               dangerouslySetInnerHTML={{ __html: translate("TermPageContent") }}
             />
-            <Box component="h1" mt={8} textAlign="center">Coming Soon</Box>
           </BoxStyle>
         </m.div>
       </MotionContainer>
