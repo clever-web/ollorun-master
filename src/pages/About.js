@@ -2,6 +2,7 @@
 import { styled } from "@mui/material/styles";
 import { Container, Box, Typography, Stack } from "@mui/material";
 // components
+import Page from "../components/Page";
 import { AboutConfig } from "../components/home/HomeConfig";
 import useLocales from "../hooks/useLocales";
 // import { mt } from "date-fns/locale";
@@ -30,117 +31,119 @@ const Service = ({ data, index, flexDirection }) => {
     const { translate } = useLocales();
 
     return (
-        <BoxStyle sx={{ padding: { xs: "10vw 24px 0", sm: "50px 24px 0" }, alignItems: 'center' }}>
-            <Container component={MotionViewport} sx={{ maxWidth: '100% !important' }}>
-                <Box>
-                    <Box
-                        sx={{
-                            display: "flex",
-                            flexDirection: { xs: flexDirection, sm: "row" },
-                            justifyContent: "space-between"
-                        }}>
-                        {index % 2 === 0 ?
-                            <>
-                                <Box
-                                    sx={{
-                                        width: { sm: "45%", xs: "100%" }
-                                    }}
-                                >
-                                    <m.div variants={varFade({durationIn: 1}, {easeIn: 1}, {repeat: Infinity}).inLeft} >
-                                        <img
-                                            src={data.url}
-                                            style={{
-                                                width: "100%"
-                                                // height: "100%"
-                                            }}
-                                            alt="URL"
-                                        />
-                                    </m.div>
+        <Page title="Why Ollorun">
+            <BoxStyle sx={{ padding: { xs: "10vw 24px 0", sm: "50px 24px 0" }, alignItems: 'center' }}>
+                <Container component={MotionViewport} sx={{ maxWidth: '100% !important' }}>
+                    <Box>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: { xs: flexDirection, sm: "row" },
+                                justifyContent: "space-between"
+                            }}>
+                            {index % 2 === 0 ?
+                                <>
+                                    <Box
+                                        sx={{
+                                            width: { sm: "45%", xs: "100%" }
+                                        }}
+                                    >
+                                        <m.div variants={varFade({durationIn: 1}, {easeIn: 1}, {repeat: Infinity}).inLeft} >
+                                            <img
+                                                src={data.url}
+                                                style={{
+                                                    width: "100%"
+                                                    // height: "100%"
+                                                }}
+                                                alt="URL"
+                                            />
+                                        </m.div>
 
-                                </Box>
-                                <Box sx={{
-                                    width: { sm: "45%", xs: "100%" },
-                                    ml: { xs: 2 }, mb: 10
-                                }}>
+                                    </Box>
+                                    <Box sx={{
+                                        width: { sm: "45%", xs: "100%" },
+                                        ml: { xs: 2 }, mb: 10
+                                    }}>
+                                            <m.div variants={varFade().inRight}>
+                                                <Box >
+                                                    <Typography
+                                                        variant="h2"
+                                                        sx={{
+                                                            mr: 10,
+                                                            mb: 3,
+                                                            color: "#ffffff",
+                                                            fontSize: {md: '2rem', sm: '1rem'},
+                                                            textAlign: 'center',
+                                                            lineHeight: "1.7"
+                                                            // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
+                                                            // borderRadius: 4
+                                                        }}
+                                                    >
+                                                        <span dangerouslySetInnerHTML={{ __html: translate(data.title) }} />
+                                                    </Typography>
+                                                </Box>
+                                            </m.div>
+                                            <Box component="p" sx={{
+                                                fontSize: {md: '1rem', sm: '0.8rem', xl: '1.5rem'}
+                                            }}>
+                                                <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
+                                            </Box>
+                                    </Box>
+                                </>
+                                :
+                                <>
+
+                                    <Box sx={{
+                                        width: { sm: "45%", xs: "100%" }, ml: { xs: 2 }, mb: 10
+                                    }}>
+                                            <m.div variants={varFade().inLeft}>
+                                                <Box>
+                                                    <Typography
+                                                        variant="h2"
+                                                        sx={{
+                                                            mb: 3,
+                                                            mr: 10,
+                                                            color: "#ffffff",
+                                                            fontSize: {md: '2rem', sm: '1.5rem'},
+                                                            textAlign: 'center',
+                                                            lineHeight: "1.7",
+                                                            // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
+                                                            borderRadius: 4
+                                                        }}
+                                                    >
+                                                        <span dangerouslySetInnerHTML={{ __html: translate(data.title) }} />
+                                                    </Typography>
+                                                </Box>
+                                            </m.div>
+                                            <Box component="p" sx={{
+                                                fontSize: {md: '1rem', sm: '0.8rem', xl: '1.5rem'}
+                                                // textAlign: {sm: 'center'}
+                                            }}>
+                                                <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
+                                            </Box>
+                                    </Box>
+                                    <Box
+                                        sx={{
+                                            width: { sm: "45%", xs: "100%" }
+                                        }}
+                                    >
                                         <m.div variants={varFade().inRight}>
-                                            <Box >
-                                                <Typography
-                                                    variant="h2"
-                                                    sx={{
-                                                        mr: 10,
-                                                        mb: 3,
-                                                        color: "#ffffff",
-                                                        fontSize: {md: '2rem', sm: '1rem'},
-                                                        textAlign: 'center',
-                                                        lineHeight: "1.7"
-                                                        // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
-                                                        // borderRadius: 4
-                                                    }}
-                                                >
-                                                    <span dangerouslySetInnerHTML={{ __html: translate(data.title) }} />
-                                                </Typography>
-                                            </Box>
+                                            <img
+                                                src={data.url}
+                                                style={{
+                                                    width: "100%",
+                                                }}
+                                                alt="URL"
+                                            />
                                         </m.div>
-                                        <Box component="p" sx={{
-                                            fontSize: {md: '1rem', sm: '0.8rem', xl: '1.5rem'}
-                                        }}>
-                                            <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
-                                        </Box>
-                                </Box>
-                            </>
-                            :
-                            <>
-
-                                <Box sx={{
-                                    width: { sm: "45%", xs: "100%" }, ml: { xs: 2 }, mb: 10
-                                }}>
-                                        <m.div variants={varFade().inLeft}>
-                                            <Box>
-                                                <Typography
-                                                    variant="h2"
-                                                    sx={{
-                                                        mb: 3,
-                                                        mr: 10,
-                                                        color: "#ffffff",
-                                                        fontSize: {md: '2rem', sm: '1.5rem'},
-                                                        textAlign: 'center',
-                                                        lineHeight: "1.7",
-                                                        // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
-                                                        borderRadius: 4
-                                                    }}
-                                                >
-                                                    <span dangerouslySetInnerHTML={{ __html: translate(data.title) }} />
-                                                </Typography>
-                                            </Box>
-                                        </m.div>
-                                        <Box component="p" sx={{
-                                            fontSize: {md: '1rem', sm: '0.8rem', xl: '1.5rem'}
-                                            // textAlign: {sm: 'center'}
-                                        }}>
-                                            <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
-                                        </Box>
-                                </Box>
-                                <Box
-                                    sx={{
-                                        width: { sm: "45%", xs: "100%" }
-                                    }}
-                                >
-                                    <m.div variants={varFade().inRight}>
-                                        <img
-                                            src={data.url}
-                                            style={{
-                                                width: "100%",
-                                            }}
-                                            alt="URL"
-                                        />
-                                    </m.div>
-                                </Box>
-                            </>
-                        }
+                                    </Box>
+                                </>
+                            }
+                        </Box>
                     </Box>
-                </Box>
-            </Container>
-        </BoxStyle >
+                </Container>
+            </BoxStyle >
+        </Page>
     )
 }
 
