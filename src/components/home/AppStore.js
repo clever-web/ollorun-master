@@ -52,9 +52,6 @@ import useLocales from "../../hooks/useLocales";
 //     </div>
 //   )
 // }
-const varSmall = {
-  hover: { scale: 1.05 }
-};
 
 const BoxStyle = styled(Box)({
   width: "100%",
@@ -123,8 +120,9 @@ export default function AppStore() {
                       <Box
                         component={m.div}
                         whileTap="tap"
-                        whileHover="hover"
-                        variants={varSmall}
+                        whileHover={{
+                          scale: 1.05
+                        }}
                         sx={{
                           display: 'inline-flex'
                         }}
@@ -146,9 +144,9 @@ export default function AppStore() {
                       <Box
                         component={m.div}
                         whileTap="tap"
-                        whileHover="hover"
-                        variants={varSmall}
-                        // variants={(isSmall && varSmall) || (isLarge && varLarge) || varMedium}
+                        whileHover={{
+                          scale: 1.05
+                        }}
                         sx={{
                           display: 'inline-flex'
                         }}

@@ -97,7 +97,7 @@ const Service = ({ data, index, flexDirection }) => {
                                     maxWidth: "500px",
                                     textAlign: "right",
                                     display: "flex",
-                                    mt: { sm: -5, xs: 0 }
+                                    mt: {md: '-80px', sm: '-40px', xs: '-25px'}
                                 }}
                             >
                                 <img
@@ -107,8 +107,7 @@ const Service = ({ data, index, flexDirection }) => {
                                     // loop
                                     // autoPlay
                                     style={{
-                                        width: "100%",
-                                        marginTop: '-80px'
+                                        width: "100%"
                                     }}
                                     alt="URL"
                                 />

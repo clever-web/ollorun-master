@@ -52,7 +52,7 @@ const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
     // },
     {
       text: "our_advisors",
-      url: `/partners`,
+      url: `/advisors`,
     },
     {
       text: "events",
@@ -190,9 +190,9 @@ const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
               <Box
                 component={m.div}
                 whileTap="tap"
-                whileHover="hover"
-                variants={varSmall}
-                // variants={(isSmall && varSmall) || (isLarge && varLarge) || varMedium}
+                whileHover={{
+                  scale: 1.05
+                }}
                 sx={{
                   display: 'inline-flex'
                 }}
@@ -202,9 +202,9 @@ const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
               <Box
                 component={m.div}
                 whileTap="tap"
-                whileHover="hover"
-                variants={varSmall}
-                // variants={(isSmall && varSmall) || (isLarge && varLarge) || varMedium}
+                whileHover={{
+                  scale: 1.05
+                }}
                 sx={{
                   display: 'inline-flex'
                 }}

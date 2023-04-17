@@ -10,8 +10,10 @@ const en = {
   about: "about",
   our_services: "Our Services",
   why_ollorun: "Why Ollorun",
-  why_description: 'Ollorun has been involved in the world of crypto assets and blockchain technology since 2020.<br>\
-  The ollorun.com website is your gateway to the Ozeety ecosystem.',
+  why_description: `<h4>Ollorun has  been involved </br>
+                    in the world of crypto assets and </br> 
+                    blockchain technology since 2020.</h4></br></br>
+  <p style="font-size: 30px">The ollorun.com website is your gateway to the </br> Ozeety ecosystem.</p>`, 
   our_advisors: "Our advisors",
   // certified_partners: "Certified Partners",
   events: "Events",
@@ -753,7 +755,7 @@ statements on the other Platforms you visit.
   <p>Business events organised by our independant advisors and by the company.</p>
   `,
   participate: `Participate`,
-  welcome_to_ollorun: `Welcome To Ollorun`,
+  welcome_to_ollorun: `Welcome to Ollorun`,
   welcome_desc: `Our sales department will contact you within 48H.`,
   welcome_content: `We are a Fintech Company that assists individuals<br/>
   and professionals in the acquisition of DeFi,<br/>

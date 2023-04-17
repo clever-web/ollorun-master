@@ -19,10 +19,6 @@ import { API_URL } from "../../config";
 import TelegramModal from "../modal/TelegramModal";
 // ----------------------------------------------------------------------
 
-const varSmall = {
-    hover: { scale: 1.05 }
-}
-
 const BoxStyle = styled(Box)({
     maxWidth: "1288px",
     margin: "auto",
@@ -179,8 +175,9 @@ export default function HomeHero() {
                             <Box
                                 component={m.div}
                                 whileTap="tap"
-                                whileHover="hover"
-                                variants={varSmall}
+                                whileHover={{
+                                    scale: 1.05
+                                }}
                                 sx={{
                                     display: 'inline-flex'
                                 }}
@@ -189,7 +186,7 @@ export default function HomeHero() {
                                     text={"why_ollorun"}
                                     icon="arrowright"
                                     style={{
-                                        px: 5,
+                                        px: {md: 5, sm: 3},
                                         py: 1,
                                         backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
                                         border: "none",
@@ -250,8 +247,9 @@ export default function HomeHero() {
                                     onClick={onRegisterForNewsLetter}
                                     component={m.div}
                                     whileTap="tap"
-                                    whileHover="hover"
-                                    variants= { varSmall }
+                                    whileHover={{
+                                        scale: 1.05
+                                    }}
                                     sx={{
                                         display: 'inline-flex'
                                     }}

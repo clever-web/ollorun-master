@@ -32,7 +32,7 @@ export default function Router() {
         { path: "policy", element: <PrivacyPage /> },
         { path: "cookie", element: <UseofCookiePage /> },
         { path: "about", element: <About /> },
-        { path: "partners", element: <CertifiedPartnerPage /> },
+        { path: "advisors", element: <AdvisorsPage /> },
         { path: "events", element: <EventsPage /> },
         { path: "support", element: <ContactPage /> },
         { path: "saveadvisor/*", element: <SaveAdvisorPage /> },
@@ -58,7 +58,8 @@ const Page404 = Loadable(lazy(() => import("../pages/Page404")));
 const LegalInfo = Loadable(lazy(() => import("../pages/LegalInfo")));
 const PrivacyPage = Loadable(lazy(() => import("../pages/PrivacyPage")));
 const UseofCookiePage = Loadable(lazy(() => import("../pages/UseofCookiePage")));
-const CertifiedPartnerPage = Loadable(lazy(() => import("../pages/CertifiedPartnerPage")));
+// const CertifiedPartnerPage = Loadable(lazy(() => import("../pages/CertifiedPartnerPage")));
+const AdvisorsPage = Loadable(lazy(() => import("../pages/AdvisorsPage")));
 const EventsPage = Loadable(lazy(() => import("../pages/EventsPage")));
 const ContactPage = Loadable(lazy(() => import("../pages/ContactPage")));
 const SaveAdvisorPage = Loadable(lazy(() => import("../pages/SaveAdvisorPage")));

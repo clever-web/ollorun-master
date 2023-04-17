@@ -129,7 +129,7 @@ export default function Footer() {
               </LinkStyle>
             ))} */}
             {footerData.map((e, index) => (
-              <LinkStyle key={index} href={e.url}>
+              <LinkStyle key={index} href={e.url} download={true}>
                 {translate(e.text)}
               </LinkStyle>
             ))}
