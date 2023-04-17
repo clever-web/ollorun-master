@@ -37,7 +37,7 @@ const BoxStyle = styled(Box)({
 export default function LegalInfo() {
   const { translate } = useLocales();
   return (
-    <Page title="Term page">
+    <Page title="Legal page">
       <MotionContainer>
         <m.div variants={varFade().in}>
           <BoxStyle sx={{ py: 8 }}>
@@ -46,6 +46,7 @@ export default function LegalInfo() {
               className="grad_text"
               sx={{
                 px: "8px",
+                mb: '5rem'
               }}
               textAlign="center"
             >

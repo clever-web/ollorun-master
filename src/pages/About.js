@@ -18,7 +18,7 @@ const BoxStyle = styled(Box)({
     padding: "50px 24px 0",
     h4: {
         color: "#ffffff",
-        fontSize: "40px",
+        fontSize: "35px",
     },
     p: {
         color: "#828082"
@@ -73,7 +73,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                             mb: 3,
                                                             color: "#ffffff",
                                                             fontSize: {md: '2rem', sm: '1rem'},
-                                                            textAlign: 'center',
+                                                            textAlign: 'left',
                                                             lineHeight: "1.7"
                                                             // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
                                                             // borderRadius: 4
@@ -84,7 +84,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 </Box>
                                             </m.div>
                                             <Box component="p" sx={{
-                                                fontSize: {md: '1rem', sm: '0.8rem', xl: '1.5rem'}
+                                                fontSize: {md: '1.2rem', sm: '0.8rem', xl: '1.5rem'}
                                             }}>
                                                 <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
                                             </Box>
@@ -94,7 +94,7 @@ const Service = ({ data, index, flexDirection }) => {
                                 <>
 
                                     <Box sx={{
-                                        width: { sm: "45%", xs: "100%" }, ml: { xs: 2 }, mb: 10
+                                        width: { sm: "45%", xs: "100%", md: "50%" }, ml: { xs: 2 }, mb: 10
                                     }}>
                                             <m.div variants={varFade().inLeft}>
                                                 <Box>
@@ -102,10 +102,9 @@ const Service = ({ data, index, flexDirection }) => {
                                                         variant="h2"
                                                         sx={{
                                                             mb: 3,
-                                                            mr: 10,
                                                             color: "#ffffff",
                                                             fontSize: {md: '2rem', sm: '1.5rem'},
-                                                            textAlign: 'center',
+                                                            textAlign: 'left',
                                                             lineHeight: "1.7",
                                                             // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
                                                             borderRadius: 4
@@ -116,7 +115,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 </Box>
                                             </m.div>
                                             <Box component="p" sx={{
-                                                fontSize: {md: '1rem', sm: '0.8rem', xl: '1.5rem'}
+                                                fontSize: {md: '1.2rem', sm: '0.8rem', xl: '1.5rem'}
                                                 // textAlign: {sm: 'center'}
                                             }}>
                                                 <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
@@ -150,8 +149,8 @@ const Service = ({ data, index, flexDirection }) => {
 export default function About({ data }) {
     const { translate } = useLocales();
     return (
-        <Box id="services" ref={data} sx={{ position: "relative", top: { xs: "unset", sm: "unset" } }}>
-            <BoxStyle sx={{ pb: { xs: 1, sm: 5 } }}>
+        <Box id="services" ref={data} sx={{ position: "relative", top: { xs: "unset", sm: "unset" }, mb: '10rem' }}>
+            <BoxStyle sx={{ pb: { xs: 1, sm: 5 }, mb: '4rem' }}>
                 <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                     maxWidth: "1530px",
                     margin: "3rem",

@@ -9,7 +9,7 @@ import { NAVBAR } from "../../config";
 import DashboardHeader from "./header";
 import Footer from "./footer";
 import ScrollToTopBtn from "../../components/ScrollToTopBtn";
-import SimpleBuyAnimation from "../../components/SimpleBuyAnimation";
+// import SimpleBuyAnimation from "../../components/SimpleBuyAnimation";
 import HeaderBecomeAdvisor from "./HeaderBecomeAdvisor";
 // ----------------------------------------------------------------------
 
@@ -61,7 +61,7 @@ export default function DashboardLayout() {
         <Footer />
       </MainStyle>
       <ScrollToTopBtn isNavOpen={isNavOpen}  />
-      <SimpleBuyAnimation isNavOpen={isNavOpen} />
+      {/* <SimpleBuyAnimation isNavOpen={isNavOpen} /> */}
     </Box>
   );
 }

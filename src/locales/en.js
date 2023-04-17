@@ -12,8 +12,8 @@ const en = {
   why_ollorun: "Why Ollorun",
   why_description: `<h4>Ollorun has  been involved </br>
                     in the world of crypto assets and </br> 
-                    blockchain technology since 2020.</h4></br></br>
-  <p style="font-size: 30px">The ollorun.com website is your gateway to the </br> Ozeety ecosystem.</p>`, 
+                    blockchain technology since 2020</h4></br></br>
+  <p style="font-size: 20px">The ollorun.com website is your gateway to the </br> Ozeety ecosystem.</p>`, 
   our_advisors: "Our advisors",
   // certified_partners: "Certified Partners",
   events: "Events",
@@ -102,16 +102,16 @@ const en = {
   operation of the network.<br/><br/>
   In exchange for this work, the Pool Masternodes will reward members in
   proportion to their participation.<br/><br/>
-  This is called " Masternodes Rewards"<br/><br/>
+  This is what we call " Masternodes Rewards".<br/><br/>
   *The annual gain is provided as an indication and reflects the current state
   of the market. Ollorun cannot guarantee its maintenance or growth.`,
   node_title: `What is a<span class="grad_text"> Node?</span><br /><br />`,
   node_desc: `A Node contributes to the integrity of the information recorded on the
-  blockchain.<br /> Its role is to save a partial copy of the global ledger and thus
+  blockchain.<br /><br /> Its role is to save a partial copy of the global ledger and thus
   participate in securing the network.<br /><br />
   Nodes are partial recording points that ensure the accuracy of
   information transmitted to the Masternodes of the network. <br /><br />
-  In exchange for this work, the Node receives rewards in OZTG, known as<br />
+  In exchange for this work, the Node receives rewards in OZTG, known as 
   "Staking Rewards". <br /><br />
   *The annual gain is provided as an indication and reflects the current state
   of the market. Ollorun cannot guarantee its maintenance or growth. `,
@@ -139,19 +139,19 @@ const en = {
   <br />
   <h4>Contact us</h4>
   <p>
-    Customer service: Write to us here 
+    Customer service: <a href="mailto:support@ollorun.com" style="color: white">Write to us here</a>
     <br />
     <br />
-    Commercial team: Write to us here
+    Commercial team: <a href="mailto:commercial@ollorun.com" style="color: white">Write to us here</a>
     <br />
     <br />
-    Apply to become an advisor: Write to us here 
+    Apply to become an advisor: <a href="mailto:job@ollorun.com" style="color: white">Write to us here</a>
   </p>
   <br />
   <br />
   <h4>Hosting company</h4>
   <p>
-    Ollorun website is provided by Sapian Grou
+    Ollorun website is provided by <a href="https://sapiangroup.com" target="_blank" style="color: white">Sapian Group</a>
   </p>`,
   PrivacyPageContent: `<p>
   The Internet is an amazing tool. It has the power to change the

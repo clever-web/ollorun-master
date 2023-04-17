@@ -10,8 +10,8 @@ const fr = {
   about: "sur",
   our_services: "Nos services",
   why_ollorun: "Pourquoi Ollorun",
-  why_description: `Ollorun s'implante dans l'univers des cryptoactifs et de la technologie blockchain depuls 2020.<br/>
-  Le site ollorun.com est votre porte d'entreé dans l'écosystéme Ozeety.`,
+  why_description: `<h4>Ollorun s'implante dans <br /> l'univers des cryptoactifs et de la technologie blockchain depuls 2020</h4><br/>
+  <p style="font-size: 30px">Le site ollorun.com est votre porte d'entreé dans l'écosystéme Ozeety.</p>`,
   our_advisors: "Nos conseillers",
   // certified_partners: "Partenaires certifiés",
   events: "Événements",
@@ -21,7 +21,7 @@ const fr = {
   become_advisor_desc: "Plongez dans le monde de la DeFi !",
   community: "Communauté",
   hero_title1: "Nous sommes Ollorun",
-  hero_title2: "Plongez dans le monde de la DeFi !",
+  hero_title2: "Plongez dans le monde </br> de la DeFi !",
   about_title1: "About",
   about_title2: "Ollorun",
   about_desc: `Ollorun est une société londonienne, fondée en 2020, et appartenant au groupe Sapian.<br/><br/>
@@ -84,18 +84,19 @@ s'appuyant sur la technologie de la Blockchain Ozeety et de son propre coin OZTG
   ser_card2_d1: "P.I.L Mobile Node",
   ser_card2_d2: "P.I.L Masternode",
 
-  master_node_title: `Qu'est-ce qu'un<span class="grad_text"> Masternode ?</span>`,
+  master_node_title: `Qu'est-ce qu'un<span class="grad_text"> Masternode?</span><br /><br />`,
   master_node_desc: `Un Masternode garantit l'intégrité des informations enregistrées sur la blockchain. Son rôle est de sauvegarder une copie complète ou partielle du grand livre et ainsi de participer à la sécurité du réseau. <br /><br />
   Un Masternode donne à ses propriétaires le pouvoir de prendre toutes les décisions importantes liées à la blockchain. Il vérifie toutes les transactions et contribue au bon fonctionnement du réseau en assurant l'exactitude des informations du grand livre.  <br /><br /> 
   En échange de ce travail, le Masternode reçoit des récompenses en OZTG, connues sous le nom de "Masternode Rewards".  <br /><br />
   *Le gain annuel est fourni à titre indicatif et reflète l'état actuel du marché. Ollorun ne peut garantir son maintien ou sa croissance.<br /><br />`,
-  pool_title: `Qu'est-ce qu'un<span class="grad_text"> Pool Masternodes ?</span>`,
+  pool_title: `Qu'est-ce qu'un<span class="grad_text"> Pool Masternodes?</span><br /><br />`,
   pool_desc: `Un Pool Masternodes est un regroupement de Masternodes. <br/><br/>
   Le Pool Masternodes permet à des tiers de contribuer à la stabilité et à la sécurité du réseau Blockchain.<br/><br/>
   En échange de leur contribution, les membres du Pool Masternodes sont récompensés en fonction de leur participation. <br/><br/>
-  Ces récompenses sont appelées "Masternode Rewards".`,
-  node_title: `Qu'est-ce qu'un<span class="grad_text"> Node ?</span>`,
-  node_desc: `Un Node contribue à l'intégrité des informations enregistrées sur la blockchain. Son rôle est de sauvegarder une copie partielle du grand livre et ainsi de participer à la sécurisation du réseau.  <br /><br />
+  Ces récompenses sont appelées "Masternode Rewards". <br /><br />
+  *Le gain annuel est fourni à titre indicatif et reflète l'état actuel du marché. Ollorun ne peut garantir son maintien ou sa croissance.<br /><br />`,
+  node_title: `Qu'est-ce qu'un<span class="grad_text"> Node ?</span><br /><br />`,
+  node_desc: `Un Node contribue à l'intégrité des informations enregistrées sur la blockchain. <br /><br />Son rôle est de sauvegarder une copie partielle du grand livre et ainsi de participer à la sécurisation du réseau.  <br /><br />
   Les Nodes sont des points d'enregistrement partiels qui assurent l'exactitude des informations transmises aux Masternodes du réseau.  <br /><br /> 
   En échange de ce travail, le Node reçoit des récompenses en OZTG, connues sous le nom de "Staking Rewards". <br /><br />
   *Le gain annuel est fourni à titre indicatif et reflète l'état actuel du marché. Ollorun ne peut garantir son maintien ou sa croissance.<br /><br />`,
@@ -105,7 +106,37 @@ s'appuyant sur la technologie de la Blockchain Ozeety et de son propre coin OZTG
   legal_info: "Mentions légales",
   UseofCookies: "Utilisation des cookies",
   PrivacyPolicy: "Politique de confidentialité ",
-  TermPageContent: ``,
+  TermPageContent: `<h4>Édition du site</h4>
+  <p>
+    Nom de la société: Ollorun Finance LTD
+    <br />
+    <br />
+    Numéro d’enregistrement: 12660658
+    <br />
+    <br />
+    Lieu d’enregistrement:  Royaume-Uni
+    <br />
+    <br />
+    Adresse d’enregistrement: 45 Albemarle Street, London, UK, W1S 4JL
+  </p>
+  <br />
+  <br />
+  <h4>Nous contacter</h4>
+  <p>
+    Service client: <a href="mailto:support@ollorun.com" style="color: white">Nous écrire ici</a>
+    <br />
+    <br />
+    Équipe commerciale: <a href="mailto:commercial@ollorun.com" style="color: white">Nous écrire ici</a>
+    <br />
+    <br />
+    Postuler le poste de conseiller: <a href="mailto:job@ollorun.com" style="color: white">Nous écrire ici</a>
+  </p>
+  <br />
+  <br />
+  <h4>Hébergeur</h4>
+  <p>
+    Le site web Ollorun est fourni par <a href="https://sapiangroup.com" target="_blank" style="color: white">Sapian Group</a>
+  </p>`,
   PrivacyPageContent: `<p>
   Internet est un outil extraordinaire. Il a le pouvoir de changer notre façon de vivre, et nous commençons à
   voir ce potentiel aujourd'hui. En quelques clics de souris, vous pouvez suivre l'actualité, rechercher des
