@@ -97,7 +97,7 @@ const Service = ({ data, index, flexDirection }) => {
                                     maxWidth: "500px",
                                     textAlign: "right",
                                     display: "flex",
-                                    mt: {md: '-80px', sm: '-40px', xs: '-25px'}
+                                    mt: {xl: '-100px', md: '-100px', sm: '-40px', xs: '-25px'}
                                 }}
                             >
                                 <img
