@@ -102,7 +102,7 @@ const en = {
   operation of the network.<br/><br/>
   In exchange for this work, the Pool Masternodes will reward members in
   proportion to their participation.<br/><br/>
-  This is what we call " Masternodes Rewards".<br/><br/>
+  This is what we call " Masternode Rewards".<br/><br/>
   *The annual gain is provided as an indication and reflects the current state
   of the market. Ollorun cannot guarantee its maintenance or growth.`,
   node_title: `What is a<span class="grad_text"> Node?</span><br /><br />`,
@@ -757,26 +757,26 @@ statements on the other Platforms you visit.
   participate: `Participate`,
   welcome_to_ollorun: `Welcome to Ollorun`,
   welcome_desc: `Our sales department will contact you within 48H.`,
-  welcome_content: `We are a Fintech Company that assists individuals<br/>
+  welcome_content: `We are a Fintech Company that assists individuals
   and professionals in the acquisition of DeFi,<br/>
   adapted and turnkey solutions.<br/><br/>
-  Our financial products and services are accessible<br/>
-  to everyone to drive the democratization of this<br/>
+  Our financial products and services are accessible
+  to everyone to drive the democratization of this
   industry, which occupies an increasingly important<br/>
   place in our society.`,
   vision: `Our Vision`,
-  vision_content: `Above all, Ollorun is a community that promotes<br/>
-  the widespread adoption of OZTG in people's daily<br/>
-  lives<br/><br/>
-  Participating in Ollorun means becoming a player<br/>
-  in the Ozeety blockchain and actively contributing<br/>
+  vision_content: `Above all, Ollorun is a community that promotes
+  the widespread adoption of OZTG in people's daily
+  lives.<br/><br/>
+  Participating in Ollorun means becoming a player
+  in the Ozeety blockchain and actively contributing
   to its implementation in the world of tomorrow.`,
   mission: `Our Mission`,
-  mission_content: `Our mission is to create an alliance between the<br/>
-  ease and convenience of using our solutions and<br/>
+  mission_content: `Our mission is to create an alliance between the
+  ease and convenience of using our solutions and
   the power of the Ozeety blockchain.<br/><br/>
   The technical expertise of our teams is our top<br/>
-  priority and we will always put training and support<br/>
+  priority and we will always put training and support
   at the heart of our strategic development.`,
   banner_text1: `Are you interested in our DeFi solutions?`,
   banner_text2: `Be guided by Ollorun`,

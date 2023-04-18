@@ -72,7 +72,7 @@ export default function RegisterPopover({ isNav }) {
           background: "linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)",
           border: !isNav ? "1px #ffffff solid" : "1px #000000 solid",
           borderRadius: "0.75rem",
-          padding: !isNav ? { md: "0.5rem 2rem", xs: "0.5rem 1rem" } : "0.5rem 2rem",
+          padding: !isNav ? { md: "0.5rem 2rem", xs: "0.5rem 1rem" } : "0.5rem 1rem",
           color: "#000000 !important",
           transition: "all 1s ease",
           cursor: "pointer",
