@@ -84,7 +84,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 </Box>
                                             </m.div>
                                             <Box component="p" sx={{
-                                                fontSize: {md: '1.2rem', sm: '0.8rem', xl: '1.5rem'}
+                                                fontSize: {md: '1.2rem', sm: '0.8rem', xl: '1.4rem'}
                                             }}>
                                                 <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
                                             </Box>
@@ -115,7 +115,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 </Box>
                                             </m.div>
                                             <Box component="p" sx={{
-                                                fontSize: {md: '1.2rem', sm: '0.8rem', xl: '1.5rem'}
+                                                fontSize: {md: '1.2rem', sm: '0.8rem', xl: '1.4rem'}
                                                 // textAlign: {sm: 'center'}
                                             }}>
                                                 <span dangerouslySetInnerHTML={{ __html: translate(data.content) }} />
