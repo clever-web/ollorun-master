@@ -149,11 +149,11 @@ const Service = ({ data, index, flexDirection }) => {
 export default function About({ data }) {
     const { translate } = useLocales();
     return (
-        <Box id="services" ref={data} sx={{ position: "relative", top: { xs: "unset", sm: "unset" }, mb: {md: '10rem', sm: '5rem'} }}>
+        <Box id="services" ref={data} sx={{ position: "relative", top: { xs: "unset", sm: "unset" } }}>
             <BoxStyle sx={{ pb: { xs: 1, sm: 5 }, mb: '4rem' }}>
                 <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
                     maxWidth: "1530px",
-                    margin: "3rem",
+                    margin: {xl: '2rem', xs: 'auto'},
                     flexWrap: 'wrap'
                 }}>
                     <Box sx={{width: {md: '60%', sm: '100%'},  display: {md: 'flex', sm: 'flex', xs: 'none'}}}>
