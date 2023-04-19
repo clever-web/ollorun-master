@@ -13,8 +13,8 @@ Logo.propTypes = {
 export default function Logo({ disabledLink = false, type }) {
 
   const logo = (
-    <Box>
-      <img src="/logo/logo_full.svg" height="auto" alt="logo" style={{ width: "10vw", minWidth: "90px" }} />
+    <Box sx={{width: {xl: '10vw', md: '10vw', sm: '20vw', xs: '30vw'}}}>
+      <img src="/logo/logo_full.svg" height="auto" alt="logo" style={{ minWidth: "150px" }} />
     </Box>
   );
 

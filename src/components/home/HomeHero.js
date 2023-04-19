@@ -186,8 +186,8 @@ export default function HomeHero() {
                                     text={"why_ollorun"}
                                     icon="arrowright"
                                     style={{
-                                        px: {md: 5, sm: 3},
-                                        py: {md: 1, xs: 0.5},
+                                        px: {md: 5, sm: 3, xs: 3},
+                                        py: {md: 1, xs: 0.6},
                                         backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
                                         border: "none",
                                         fontSize: {md: '1.5rem', xs: '1rem'},
