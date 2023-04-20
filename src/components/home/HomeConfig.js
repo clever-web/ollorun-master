@@ -161,15 +161,15 @@ const FinanceServiceConfig = [
     content: [
       {
         text: "node_annual_license",
-        icon: "/assets/images/service_sec2_ico1.png",
+        icon: "/assets/images/services_icon/Icon_OZTG_licence.svg",
       },
       {
         text: "node_roi",
-        icon: "/assets/images/service_sec1_ico2.png",
+        icon: "/assets/images/services_icon/Icon_ROI.svg",
       },
       {
         text: "node_payout",
-        icon: "/assets/images/service_sec2_ico4.png",
+        icon: "/assets/images/services_icon/Icon_payment.svg",
       }
     ],
     title: "node_title",
@@ -181,15 +181,15 @@ const FinanceServiceConfig = [
     content: [
       {
         text: "masternode_annual_license",
-        icon: "/assets/images/service_sec2_ico1.png",
+        icon: "/assets/images/services_icon/Icon_OZTG_licence.svg",
       },
       {
         text: "masternode_roi",
-        icon: "/assets/images/service_sec1_ico2.png",
+        icon: "/assets/images/services_icon/Icon_ROI.svg",
       },
       {
         text: "masternode_earning",
-        icon: "/assets/images/service_sec2_ico4.png",
+        icon: "/assets/images/services_icon/Icon_payment.svg",
       }
     ],
     title: "master_node_title",
@@ -201,15 +201,15 @@ const FinanceServiceConfig = [
     content: [
       {
         text: "pool_masternode_purchase",
-        icon: "/assets/images/service_sec2_ico1.png",
+        icon: "/assets/images/services_icon/Icon_OZTG_licence.svg",
       },
       {
         text: "pool_masternode_fourlock",
-        icon: "/assets/images/service_sec1_ico2.png",
+        icon: "/assets/images/services_icon/icon_LockIn.svg",
       },
       {
         text: "pool_masternode_roi",
-        icon: "/assets/images/service_sec2_ico4.png",
+        icon: "/assets/images/services_icon/Icon_ROI.svg",
       }
     ],
     title: "pool_title",

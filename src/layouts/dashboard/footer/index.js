@@ -69,6 +69,7 @@ export default function Footer() {
         mx={3}
         direction={{ xs: "column", lg: "row" }}
         justifyContent="space-between"
+        sx={{flexWrap: 'wrap'}}
       >
         <Box
           sx={{

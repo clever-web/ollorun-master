@@ -61,7 +61,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 component="p"
                                                 sx={{
                                                     textTransform: "capitalize",
-                                                    fontSize: "clamp(1rem, 1vw, 1.5rem)",
+                                                    fontSize: "clamp(1.2rem, 1vw, 1.5rem)",
                                                     fontWeight: "500"
                                                 }}
                                             >
@@ -83,7 +83,7 @@ const Service = ({ data, index, flexDirection }) => {
                                         />
                                         <Box component="p" sx={{
                                             my: 2,
-                                            fontSize: "clamp(1rem, 1vw, 1.5rem)"
+                                            fontSize: "clamp(1.2rem, 1vw, 1.5rem)"
                                         }}>
                                             {translate(each.text)}
                                         </Box>
@@ -156,7 +156,7 @@ const Service = ({ data, index, flexDirection }) => {
                                                 component="p"
                                                 sx={{
                                                     textTransform: "capitalize",
-                                                    fontSize: "clamp(1rem, 1vw, 1.5rem)",
+                                                    fontSize: "clamp(1.2rem, 1vw, 1.5rem)",
                                                     fontWeight: "500"
                                                 }}
                                             >
@@ -177,7 +177,7 @@ const Service = ({ data, index, flexDirection }) => {
                                         />
                                         <Box component="p" sx={{
                                             my: 2,
-                                            fontSize: "clamp(1rem, 1vw, 1.5rem)",
+                                            fontSize: "clamp(1.2rem, 1vw, 1.5rem)",
                                         }}>
                                             {translate(each.text)}
                                         </Box>

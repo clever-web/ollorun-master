@@ -21,7 +21,7 @@ const BoxStyle = styled(Box)({
         fontSize: "35px",
     },
     p: {
-        color: "#828082"
+        color: "#BACECE"
     }
 })
 
@@ -32,12 +32,13 @@ const Service = ({ data, index, flexDirection }) => {
 
     return (
         <Page title="Why Ollorun">
-            <BoxStyle sx={{ padding: { xs: "10vw 24px 0", sm: "50px 24px 0" }, alignItems: 'center' }}>
+            <BoxStyle sx={{ padding: { xs: "10vw 24px 0", sm: "50px 24px 0" }, alignItems: 'center'}}>
                 <Container component={MotionViewport} sx={{ maxWidth: '100% !important' }}>
                     <Box>
                         <Box
                             sx={{
                                 display: "flex",
+                                flexWrap: 'wrap',
                                 flexDirection: { xs: flexDirection, sm: "row" },
                                 justifyContent: "space-between"
                             }}>
@@ -62,7 +63,7 @@ const Service = ({ data, index, flexDirection }) => {
                                     </Box>
                                     <Box sx={{
                                         width: { sm: "45%", xs: "100%" },
-                                        ml: { xs: 2 }, mb: '1rem'
+                                        ml: { xs: 2 }, mb: '1rem', mt: '1rem'
                                     }}>
                                             <m.div variants={varFade().inRight}>
                                                 <Box >
@@ -75,8 +76,6 @@ const Service = ({ data, index, flexDirection }) => {
                                                             fontSize: {md: '2rem', sm: '1rem', xs: '1.5rem'},
                                                             textAlign: 'left',
                                                             lineHeight: "1.7"
-                                                            // backgroundImage: 'linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)',
-                                                            // borderRadius: 4
                                                         }}
                                                     >
                                                         <span dangerouslySetInnerHTML={{ __html: translate(data.title) }} />
@@ -94,7 +93,7 @@ const Service = ({ data, index, flexDirection }) => {
                                 <>
 
                                     <Box sx={{
-                                        width: { sm: "45%", xs: "100%", md: "50%" }, ml: { xs: 2 }, mb: '1rem'
+                                        width: { sm: "45%", xs: "100%", md: "45%" }, ml: { xs: 2 }, mb: '1rem', mt: '2rem'
                                     }}>
                                             <m.div variants={varFade().inLeft}>
                                                 <Box>
@@ -149,14 +148,14 @@ const Service = ({ data, index, flexDirection }) => {
 export default function About({ data }) {
     const { translate } = useLocales();
     return (
-        <Box id="services" ref={data} sx={{ position: "relative", top: { xs: "unset", sm: "unset" } }}>
+        <Box id="services" ref={data} sx={{ position: "relative", top: { xs: "unset", sm: "unset" }, mb: {lg: '5rem'} }}>
             <BoxStyle sx={{ pb: { xs: 1, sm: 5 }, mb: '4rem' }}>
                 <Stack direction='row' justifyContent='space-between' alignItems='center' sx={{
-                    maxWidth: "1530px",
                     margin: {xl: '2rem', xs: 'auto'},
-                    flexWrap: 'wrap'
+                    flexWrap: 'wrap',
+                    padding: { xs: "10vw 24px 0", sm: "50px 24px 0" }
                 }}>
-                    <Box sx={{width: {md: '60%', sm: '100%'},  display: {md: 'flex', sm: 'flex', xs: 'none'}}}>
+                    <Box sx={{width: {md: '45%', sm: '100%'},  display: {md: 'flex', sm: 'none', xs: 'none'}}}>
                         <Typography
                             variant="body2"
                             sx={{
@@ -166,12 +165,12 @@ export default function About({ data }) {
                             <span dangerouslySetInnerHTML={{ __html: translate('why_description') }} />
                         </Typography>
                     </Box>
-                    <Box sx={{ mt: {sm: '3rem', xs: '0'}, display: 'flex', width: {md: '30%', sm:'100%', xs: '100%'}}}>
+                    <Box sx={{ mt: {sm: '3rem', xs: '0'}, display: 'flex', width: {md: '45%', sm:'100%', xs: '100%'}}}>
                         <Box
                             component="img"
                             src="/assets/images/ollorun_label.svg"
                             alt="LABEL_OLLORUN_2023_Plan de travail 1.svg"
-                            sx={{width:{md:'80%', sm: '60%', xs: '60%'}, m:'auto'}}
+                            sx={{width:{md:'50%', sm: '50%', xs: '60%'}, m:'auto'}}
                         />
                     </Box>
                     {/* <Box sx={{width: {xs: '100%'},  display: {md: 'none', sm: 'none', xs: 'flex'}, mt: '4rem'}}>
