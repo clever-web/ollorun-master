@@ -46,7 +46,7 @@ const Service = ({ data, index, flexDirection }) => {
                                 <>
                                     <Box
                                         sx={{
-                                            width: { sm: "45%", xs: "100%" }
+                                            width: { sm: "45%", xs: "100%", md: '45%' }
                                         }}
                                     >
                                         <m.div variants={varFade({durationIn: 1}, {easeIn: 1}, {repeat: Infinity}).inLeft} >
@@ -62,7 +62,7 @@ const Service = ({ data, index, flexDirection }) => {
 
                                     </Box>
                                     <Box sx={{
-                                        width: { sm: "45%", xs: "100%" },
+                                        width: { sm: "45%", xs: "100%", md: "43%" },
                                         ml: { xs: 2 }, mb: '1rem', mt: '1rem'
                                     }}>
                                             <m.div variants={varFade().inRight}>
@@ -93,7 +93,7 @@ const Service = ({ data, index, flexDirection }) => {
                                 <>
 
                                     <Box sx={{
-                                        width: { sm: "45%", xs: "100%", md: "45%" }, ml: { xs: 2 }, mb: '1rem', mt: '2rem'
+                                        width: { sm: "45%", xs: "100%", md: "43%" }, ml: { md: '1.5rem', xs: 2 }, mb: '1rem', mt: '2rem'
                                     }}>
                                             <m.div variants={varFade().inLeft}>
                                                 <Box>
@@ -122,7 +122,7 @@ const Service = ({ data, index, flexDirection }) => {
                                     </Box>
                                     <Box
                                         sx={{
-                                            width: { sm: "45%", xs: "100%" }
+                                            width: { md: '45%', sm: "45%", xs: "100%" }
                                         }}
                                     >
                                         <m.div variants={varFade().inRight}>

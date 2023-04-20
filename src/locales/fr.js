@@ -10,8 +10,8 @@ const fr = {
   about: "sur",
   our_services: "Nos services",
   why_ollorun: "Pourquoi Ollorun",
-  why_description: `<h4>Ollorun s'implante dans l'univers des cryptoactifs et de la technologie blockchain depuis 2020</h4><br/>
-  <p style="font-size: 30px">Le site ollorun.com est votre porte d'entreé dans l'écosystéme Ozeety.</p>`,
+  why_description: `<h4>Ollorun s'implante dans l'univers des cryptoactifs et de la technologie blockchain depuis 2020</h4><br/><br />
+  <p style="font-size: 20px">Le site ollorun.com est votre porte d'entreé dans l'écosystéme Ozeety.</p>`,
   our_advisors: "Nos conseillers",
   // certified_partners: "Partenaires certifiés",
   events: "Événements",

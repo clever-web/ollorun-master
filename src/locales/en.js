@@ -10,8 +10,8 @@ const en = {
   about: "about",
   our_services: "Our Services",
   why_ollorun: "Why Ollorun",
-  why_description: `<h4>Ollorun has  been involved </br>
-                    in the world of crypto assets and </br> 
+  why_description: `<h4>Ollorun has  been involved 
+                    in the world of crypto assets and 
                     blockchain technology since 2020</h4></br></br>
   <p style="font-size: 20px">The ollorun.com website is your gateway to the </br> Ozeety ecosystem.</p>`, 
   our_advisors: "Our advisors",
