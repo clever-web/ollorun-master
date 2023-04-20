@@ -243,6 +243,13 @@ input {
   .css-18qelsv-MuiTypography-root {
     font-size: 1rem;
   }
+}
+
+@media (min-width:900px) and (max-width:1530px) {
+  .css-t7vg4t-MuiTypography-root {
+    text-align: left;
+    margin-left: 1.2rem;
+  }
 }​
 
 
