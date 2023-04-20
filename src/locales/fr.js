@@ -672,7 +672,7 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   `,
   participate: `Participer`,
   welcome: `Bienvenue`,
-  welcome_to_ollorun: `Bienvenue à Ollorun`,
+  welcome_to_ollorun: `Bienvenue chez Ollorun`,
   welcome_desc: `Notre service commercial vous contactera dans les 48H.`,
   welcome_content: `Nous sommes une fintech qui accompagne
   particuliers et professionnels dans l'acquisition de
