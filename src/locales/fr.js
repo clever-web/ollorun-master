@@ -676,7 +676,7 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   welcome_desc: `Notre service commercial vous contactera dans les 48H.`,
   welcome_content: `Nous sommes une fintech qui accompagne
   particuliers et professionnels dans l'acquisition de
-  solutions DeFi, adapées et clé en main.<br/>
+  solutions DeFi, adapées et clé en main.<br/><br/>
   Nos produits et services financiers sont accessibles
   à tous dans le but de favoriser la démocratisation
   de cette industrie qui prend une place de plus en
@@ -684,14 +684,14 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   vision: `Notre vision`,
   vision_content: `Ollorun, c'est avant tout une communauté qui
   promeut l'adaoption massive de I'OZTG dans le
-  quotidien de chacun.<br/>
+  quotidien de chacun.<br/><br/>
   Prendre part à Ollorun, c'est être acteur de la
   blockchain Ozeety et contribuer activement à son
   déploiement dans le monde de demain.`,
   mission: `Notre mission`,
   mission_content: `Notre mission est de créer une alliance entre la
   facilité et la commodité d'utilisation de nos
-  solutions et la puissance de la blockchain Ozeety.<br/>
+  solutions et la puissance de la blockchain Ozeety.<br/><br/>
   L'expertise technique de nos équipes est pour nous
   une priorité, nous placerons toujours la formation et
   l'accompagnement au centre de notre
