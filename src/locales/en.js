@@ -759,21 +759,21 @@ statements on the other Platforms you visit.
   welcome_desc: `Our sales department will contact you within 48H.`,
   welcome_content: `We are a Fintech Company that assists individuals
   and professionals in the acquisition of DeFi,
-  adapted and turnkey solutions.<br/>
+  adapted and turnkey solutions.<br/><br/>
   Our financial products and services are accessible
   to everyone to drive the democratization of this industry, which occupies an increasingly important
   place in our society.`,
   vision: `Our Vision`,
   vision_content: `Above all, Ollorun is a community that promotes
   the widespread adoption of OZTG in people's daily
-  lives.<br/>
+  lives.<br/><br/>
   Participating in Ollorun means becoming a player
   in the Ozeety blockchain and actively contributing
   to its implementation in the world of tomorrow.`,
   mission: `Our Mission`,
   mission_content: `Our mission is to create an alliance between the
   ease and convenience of using our solutions and
-  the power of the Ozeety blockchain.<br/>
+  the power of the Ozeety blockchain.<br/><br/>
   The technical expertise of our teams is our top priority and we will always put training and support
   at the heart of our strategic development.`,
   banner_text1: `Are you interested in our DeFi solutions?`,
