@@ -256,11 +256,11 @@ input {
     /* -webkit-margin-left: 1.2rem !important; */
     margin: 0 auto;
     text-align: left;
-    margin-left: 1.2rem !important;
+    margin-left: 1.4rem !important;
   }
   .css-142g7xx {
     text-align: left;
-    margin-left: 1.2rem !important;
+    margin-left: 1.4rem !important;
   }
 }
 @media (min-width:1250px) and (max-width:1530px) {
@@ -272,7 +272,7 @@ input {
   }
   .css-142g7xx {
     text-align: left;
-    margin-left: 1.2rem !important;
+    margin-left: 1.4rem !important;
   }
   h4 {
     font-size: 1.8rem !important;
