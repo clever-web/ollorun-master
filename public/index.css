@@ -248,13 +248,14 @@ input {
 @media (min-width:900px) and (max-width:1530px) {
   .css-t7vg4t-MuiTypography-root {
     text-align: left;
-    margin-left: 1.2rem;
+    margin-left: 1.2rem !important;
   }
 }
 @media (min-width:1250px) and (max-width:1530px) {
   .css-t7vg4t-MuiTypography-root {
+    /* margin: 0 auto !important; */
     text-align: left;
-    margin-left: 1.2rem;
+    margin-left: 1.2rem !important;
   }
   h4 {
     font-size: 1.8rem !important;
