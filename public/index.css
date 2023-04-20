@@ -247,18 +247,26 @@ input {
 
 @media (min-width:900px) and (max-width:1530px) {
   .css-t7vg4t-MuiTypography-root {
-    -webkit-margin-left: 1.2rem !important;
+    /* -webkit-margin-left: 1.2rem !important; */
     margin: 0 auto;
+    text-align: left;
+    margin-left: 1.2rem !important;
+  }
+  .css-142g7xx {
     text-align: left;
     margin-left: 1.2rem !important;
   }
 }
 @media (min-width:1250px) and (max-width:1530px) {
   .css-t7vg4t-MuiTypography-root {
-    -webkit-margin-left: 1.4rem !important; 
+    /* -webkit-margin-left: 1.4rem !important;  */
     margin: 0 auto;
     text-align: left;
     margin-left: 1.4rem !important;
+  }
+  .css-142g7xx {
+    text-align: left;
+    margin-left: 1.2rem !important;
   }
   h4 {
     font-size: 1.8rem !important;
