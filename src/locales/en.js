@@ -13,7 +13,7 @@ const en = {
   why_description: `<h4>Ollorun has  been involved 
                     in the world of crypto assets and 
                     blockchain technology since 2020</h4></br></br>
-  <p style="font-size: 20px">The ollorun.com website is your gateway to the </br> Ozeety ecosystem.</p>`, 
+  <p style="font-size: 20px">The ollorun.com website is your gateway to the Ozeety ecosystem.</p>`, 
   our_advisors: "Our advisors",
   // certified_partners: "Certified Partners",
   events: "Events",

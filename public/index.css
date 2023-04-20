@@ -214,6 +214,38 @@ input {
   }
 }
 
+@media (min-width:1020px) and (max-width:1150px) {
+  .css-15zgq1s {
+    font-size: 1rem !important;
+  }
+}
+@media (min-width:900px) and (max-width:1020px) {
+  .css-15zgq1s {
+    font-size: 0.9rem !important;
+  }
+  .css-3cy54k-MuiTypography-root {
+    font-size: 1.5rem;
+  }
+  .css-18qelsv-MuiTypography-root {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 0.9rem !important;
+  }
+}
+@media (min-width:600px) and (max-width:800px) {
+  .css-15zgq1s {
+    font-size: 0.6rem !important;
+  }
+  .css-18qelsv-MuiTypography-root {
+    font-size: 1rem;
+  }
+}​
+
+
 /* 
 * Bottom Animation
 */

@@ -66,7 +66,7 @@ const Service = ({ data, index, flexDirection }) => {
                                         ml: { xs: 2 }, mb: '1rem', mt: '1rem'
                                     }}>
                                             <m.div variants={varFade().inRight}>
-                                                <Box >
+                                                <Box id="text-res123">
                                                     <Typography
                                                         variant="h2"
                                                         sx={{
@@ -93,7 +93,7 @@ const Service = ({ data, index, flexDirection }) => {
                                 <>
 
                                     <Box sx={{
-                                        width: { sm: "45%", xs: "100%", md: "43%" }, ml: { md: '1.5rem', xs: 2 }, mb: '1rem', mt: '2rem'
+                                        width: { sm: "45%", xs: "100%", md: "43%" }, ml: { md: '1.6rem', xs: 2 }, mb: '1rem', mt: '2rem'
                                     }}>
                                             <m.div variants={varFade().inLeft}>
                                                 <Box>
@@ -155,7 +155,7 @@ export default function About({ data }) {
                     flexWrap: 'wrap',
                     padding: { xs: "10vw 24px 0", sm: "50px 24px 0" }
                 }}>
-                    <Box sx={{width: {md: '45%', sm: '100%'},  display: {md: 'flex', sm: 'none', xs: 'none'}}}>
+                    <Box sx={{width: {md: '47%', sm: '100%'},  display: {md: 'flex', sm: 'none', xs: 'none'}}}>
                         <Typography
                             variant="body2"
                             sx={{
