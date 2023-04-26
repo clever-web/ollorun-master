@@ -107,14 +107,14 @@ export default function Footer() {
           flexWrap="wrap"
           sx={{ order: { xs: "1", lg: "3" }, my: { xs: 3, lg: 0 }, mb: { xs: 5, lg: 0 } }}
         >
-          <Box component={m.div} whileHover={{scale: 1.05}} mb={2} ml="auto" sx={{ mr: { xs: "auto", lg: "0" } }}>
+          {/* <Box component={m.div} whileHover={{scale: 1.05}} mb={2} ml="auto" sx={{ mr: { xs: "auto", lg: "0" } }}>
             <DefaultBtn
               text={translate("join_our_telegram")}
               icon="akar-icons:telegram-fill"
               href="https://t.me/Ollorun_Finance_Official"
               style={{ textTransform: "inherit" }}
             />
-          </Box>
+          </Box> */}
           <Stack
             // spacing={2}
             alignItems="center"
