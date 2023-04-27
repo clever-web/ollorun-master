@@ -18,10 +18,6 @@ import RegisterPopover from "./RegisterPopover";
 import MenuIcon from "../../../components/MenuIcon";
 import CloseIcon from '../../../components/CloseIcon';
 
-const varSmall = {
-  hover: { scale: 1.05 }
-};
-
 
 const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
   const [navOpen, setNavOpen] = useState("");
@@ -50,14 +46,14 @@ const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
     //   text: "certified_partners",
     //   url: `/partners`,
     // },
-    {
-      text: "our_advisors",
-      url: `/advisors`,
-    },
-    {
-      text: "events",
-      url: "/events",
-    },
+    // {
+    //   text: "our_advisors",
+    //   url: `/advisors`,
+    // },
+    // {
+    //   text: "events",
+    //   url: "/events",
+    // },
     {
       text: "support",
       url: "/support",
@@ -93,7 +89,7 @@ const ResponsiveAppBar = ({ setIsNavbarOpen }) => {
         // top: {
         //   xs: "50px", sm: "40px"
         // },
-        top: "40px",
+        // top: "40px",
         zIndex: 2
       }}
     >

@@ -21,7 +21,7 @@ const MainStyle = styled("main", {
   // paddingTop: "100px",
   position: "relative",
   zIndex: 1,
-  top: "40px",
+  // top: "40px",
   [theme.breakpoints.up("lg")]: {
     paddingLeft: 0,
     paddingRight: 0,
@@ -54,7 +54,7 @@ export default function DashboardLayout() {
         minHeight: { lg: 1 },
       }}
     >
-      <HeaderBecomeAdvisor />
+      {/* <HeaderBecomeAdvisor /> */}
       <DashboardHeader setIsNavbarOpen={setIsNavOpen}/>
       <MainStyle>
         <Outlet />
