@@ -4,7 +4,7 @@ import Page from "../components/Page";
 import HomeHero from "../components/home/HomeHero";
 // import DescOztg from "../components/home/DescOztg";
 import FinanceService from "../components/home/FinanceService";
-import Academy from "../components/home/Academy";
+// import Academy from "../components/home/Academy";
 import AppStore from "../components/home/AppStore";
 import IntroVideo from "../components/home/IntroVideo";
 import { Box } from "@mui/material";
@@ -57,10 +57,10 @@ export default function HomePage() {
       temp.map((e) => (e.state = ""));
       temp[1].state = "active";
     }
-    if (window.pageYOffset >= academy.current.offsetTop - 20) {
-      temp.map((e) => (e.state = ""));
-      temp[2].state = "active";
-    }
+    // if (window.pageYOffset >= academy.current.offsetTop - 20) {
+    //   temp.map((e) => (e.state = ""));
+    //   temp[2].state = "active";
+    // }
     setDotList(temp);
   };
 
@@ -70,7 +70,7 @@ export default function HomePage() {
       <HomeHero />
       {/* <DescOztg /> */}
       <FinanceService data={financeservice} />
-      <Academy data={academy} />
+      {/* <Academy data={academy} /> */}
       <AppStore />
       <ListStyle sx={{ right: { xs: "8px", sm: "48px" } }}>
         {dotList.map((e, index) => (

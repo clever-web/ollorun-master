@@ -146,6 +146,10 @@ input {
   }
 }
 
+p>a:hover {
+  color: #e1b559 !important;
+}
+
 .grad_text {
   background: linear-gradient(92.94deg, #3ffbdc 4.54%, #e1b559 93.54%);
   -webkit-background-clip: text;

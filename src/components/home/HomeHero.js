@@ -30,7 +30,7 @@ const BoxStyle = styled(Box)({
 
 // ----------------------------------------------------------------------
 
-export default function HomeHero() {
+export default function HomeHero(isNav) {
     const [emailForNewsletter, setEmailForNewsLetter] = useState("");
     const [modalOpen, setModalOpen] = useState(false);
     const [tModalOpen, setTModalOpen] = useState(false);
@@ -179,7 +179,9 @@ export default function HomeHero() {
                                     scale: 1.05
                                 }}
                                 sx={{
-                                    display: 'inline-flex'
+                                    display: 'inline-flex',
+                                    borderRadius: "0.8rem",
+                                    border: !isNav ? "1px #ffffff solid" : "1px #ffffff solid",
                                 }}
                             >
                                 <WhiteBtn
@@ -200,7 +202,7 @@ export default function HomeHero() {
                             </Box>
                         </Link>
                     </Box>
-                    <Box sx={{ zIndex: 2, position: { xs: "absolute", sm: "relative" }, bottom: { xs: "unset", sm: 0 }, pr: "1.5rem" }}>
+                    {/* <Box sx={{ zIndex: 2, position: { xs: "absolute", sm: "relative" }, bottom: { xs: "unset", sm: 0 }, pr: "1.5rem" }}>
                         <Box sx={{ mt: "10%" }}>
                             <Box
                                 component={"p"}
@@ -242,7 +244,7 @@ export default function HomeHero() {
                                         }}
                                     />
                                 </Box>
-                                {/* <Box onClick={onRegisterForNewsLetter}> */}
+                                <Box onClick={onRegisterForNewsLetter}>
                                 <Box
                                     onClick={onRegisterForNewsLetter}
                                     component={m.div}
@@ -272,10 +274,10 @@ export default function HomeHero() {
                                         }}
                                     />
                                 </Box>
-                                {/* </Box> */}
+                                </Box>
                             </Box>
                         </Box>
-                    </Box>
+                    </Box> */}
                 </MotionViewport>
                 <ClientModal modalOpen={modalOpen} handleModalClose={handleModalClose} />
                 {/* <ToastContainer sx={{zIndex: 100}}/> */}

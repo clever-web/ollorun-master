@@ -405,14 +405,37 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
     const [phone, setPhone] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [cityCountry, setCityCountry] = React.useState("");
-    const [currentFieldActivity, setCurrentFieldActivity] = React.useState("");
+    const [postalCode, setPostalCode] = React.useState("");
     const [capchaResult, setCapchaResult] = React.useState("");
     const [cv, setCv] = React.useState(null);
     const [coverLetter, setCoverLetter] = React.useState(null);
     const [cvName, setCvName] = React.useState("");
-    const [coverLetterName, setCoverLetterName] = React.useState("");
+    // const [coverLetterName, setCoverLetterName] = React.useState("");
+    const [checkList, setCheckList] = React.useState({
+        cifYes: false,
+        amfYes: false,
+        cvYes: false,
+        cvNo: false
+    });
+    const [reasonText, setReasonText] = React.useState("");
 
     const { translate, currentLang } = useLocales();
+
+    const handleChangeCifYes = () => {
+        setCheckList({ ...checkList, cifYes: !checkList.cifYes })
+    }
+
+    const handleChangeAmfYes = () => {
+        setCheckList({ ...checkList, amfYes: !checkList.amfYes })
+    }
+
+    const handleChangeCvYes = () => {
+        setCheckList({ ...checkList, cvYes: !checkList.cvYes })
+    }
+
+    const handleChangeCvNo = () => {
+        setCheckList({ ...checkList, cvNo: !checkList.cvNo })
+    }
 
     const handleChangeCV = (e, results) => {
         results.forEach(result => {
@@ -426,17 +449,17 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
         });
     }
 
-    const handleChangeCoverLetter = (e, results) => {
-        results.forEach(result => {
-            const [e, file] = result;
-            if (checkFileType(file)) {
-                setCoverLetter({ file: e.target.result, info: result[1].name });
-                setCoverLetterName(file.name);
-            }
-            else
-                notifyToast("error", 'Only PDF or DOCX is supported!');
-        });
-    }
+    // const handleChangeCoverLetter = (e, results) => {
+    //     results.forEach(result => {
+    //         const [e, file] = result;
+    //         if (checkFileType(file)) {
+    //             setCoverLetter({ file: e.target.result, info: result[1].name });
+    //             setCoverLetterName(file.name);
+    //         }
+    //         else
+    //             notifyToast("error", 'Only PDF or DOCX is supported!');
+    //     });
+    // }
 
     const onChangeReCaptcha = (result) => {
         setCapchaResult(result);
@@ -448,8 +471,15 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
 
     const emptyForm = () => {
         setFName(""); setLName(""); setPhone(""); setEmail("");
-        setCityCountry(""); setCurrentFieldActivity(""); setCapchaResult("");
-        setCvName(""); setCoverLetterName(""); setCv(null); setCoverLetter(null);
+        setCityCountry(""); setPostalCode(""); setCapchaResult("");
+        setCvName(""); setCv(null); setCoverLetter(null);
+        setCheckList({
+            cifYes: false,
+            amfYes: false,
+            cvYes: false,
+            cvNo: false
+        });
+        setReasonText("");
     }
 
     // const cancelForm = () => {
@@ -461,7 +491,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
         validatePhone(phone)
         if (fName && lName && phone && validatePhone(phone) && email &&
             validateEmail(email) && capchaResult && cityCountry && cityCountry.includes("/") &&
-            currentFieldActivity && cv && cvName && coverLetter && coverLetterName)
+            postalCode && cv && cvName && coverLetter)
             return true;
         else return false;
     }
@@ -470,20 +500,22 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
         if (validateForm()) {
             // submit form
             handleModalClose(false);
-            emptyForm();
+            // emptyForm();
             try {
                 const response = await axios({
                     method: "post",
-                    url: `${API_URL}/user/become-advisor`,
+                    url: `${API_URL}/user/join-us`,
                     data: {
                         fName: fName,
                         lName: lName,
                         phone: phone,
                         email: email,
                         cityCountry: cityCountry,
-                        currentFieldActivity: currentFieldActivity,
+                        postalCode: postalCode,
                         cv: cv,
-                        coverLetter: coverLetter,
+                        // coverLetter: coverLetter,
+                        interest: checkList,
+                        reasonText: reasonText,
                         toEmail: ADVISOR_JOB_EMAIL,
                     },
                 })
@@ -510,13 +542,12 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                 notifyToast("error", "Email is required!");
             if (!validateEmail(email))
                 notifyToast("error", "Email Format is not correct!");
-
+            if (!postalCode)
+                notifyToast("error", "Postal Code is required!");
             if (!cityCountry.includes("/"))
                 notifyToast("error", "City/Country Format is not correct!");
             if (!cvName)
                 notifyToast("error", "CV is required!");
-            if (!coverLetterName)
-                notifyToast("error", "Cover Letter is required!")
             return false;
         }
     }
@@ -657,11 +688,11 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             <TextField
                                 required
                                 id="standard-required"
-                                label={translate("current_field_activity")}
+                                label={translate("postal_code")}
                                 variant="standard"
                                 placeholder={translate("financial_advisor")}
-                                value={currentFieldActivity}
-                                onChange={(e) => setCurrentFieldActivity(e.target.value)}
+                                value={postalCode}
+                                onChange={(e) => setPostalCode(e.target.value)}
                                 sx={{
                                     width: "100%",
                                     my: 5,
@@ -696,12 +727,87 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             />
                         </FormControl>
                     </Box>
+
+                    <Box>
+                        <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
+                            <FormLabel component="legend" sx={{ mb: 2 }}>{translate("cif_letter")}</FormLabel>
+                            <FormGroup>
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox checked={ checkList.cifYes } onChange={ handleChangeCifYes } name="cifYes" />
+                                    }
+                                    label={ translate("yes") }
+                                    sx={{
+                                        color: "rgb(18, 29, 51)",
+                                        "& .MuiFormControlLabel-label": {
+                                            color: "rgb(18, 29, 51) !important"
+                                        },
+                                        "& .Mui-checked": { color: "#40fbdc !important" }
+                                    }}
+                                />
+                            </FormGroup>
+                        </FormControl>
+                    </Box>
+                    <Box>
+                        <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
+                            <FormLabel component="legend" sx={{ mb: 2 }}>{translate("amf_letter")}</FormLabel>
+                            <FormGroup>
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox checked={ checkList.amfYes } onChange={ handleChangeAmfYes } name="amfYes" />
+                                    }
+                                    label={ translate("yes") }
+                                    sx={{
+                                        color: "rgb(18, 29, 51)",
+                                        "& .MuiFormControlLabel-label": {
+                                            color: "rgb(18, 29, 51) !important"
+                                        },
+                                        "& .Mui-checked": { color: "#40fbdc !important" }
+                                    }}
+                                />
+                            </FormGroup>
+                        </FormControl>
+                    </Box>
+                    <Box>
+                        <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
+                            <FormLabel component="legend" sx={{ mb: 2 }}>{ translate("cv_attach_confirm_letter") }</FormLabel>
+                            <FormGroup>
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox checked={ checkList.cvYes } onChange={ handleChangeCvYes } name="cvYes" />
+                                    }
+                                    label={ translate("attached_cv") }
+                                    sx={{
+                                        color: "rgb(18, 29, 51)",
+                                        "& .MuiFormControlLabel-label": {
+                                            color: "rgb(18, 29, 51) !important"
+                                        },
+                                        "& .Mui-checked": { color: "#40fbdc !important" }
+                                    }}
+                                />
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox checked={ checkList.cvNo } onChange={ handleChangeCvNo } name="cvNo" />
+                                    }
+                                    label={ translate("attached_other_doc") }
+                                    sx={{
+                                        color: "rgb(18, 29, 51)",
+                                        "& .MuiFormControlLabel-label": {
+                                            color: "rgb(18, 29, 51) !important"
+                                        },
+                                        "& .Mui-checked": { color: "#40fbdc !important" }
+                                    }}
+                                />
+                            </FormGroup>
+                        </FormControl>
+                    </Box>
+
                     <Box sx={{ display: { xs: "inherit", sm: "flex" }, justifyContent: "space-between" }}>
                         <FormControl sx={{ width: { xs: "100%", sm: "45%" }, }}>
                             <TextField
                                 required
                                 id="standard-required"
-                                label="CV"
+                                label={ translate("attached_file") }
                                 htmlFor="my-file-input"
                                 variant="standard"
                                 InputProps={{ disableUnderline: true }}
@@ -721,7 +827,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                                 <Box component="p">{cvName}</Box>
                             </FileReaderInput>
                         </FormControl>
-                        <FormControl sx={{ width: { xs: "100%", sm: "45%" }, mb: 1.5 }}>
+                        {/* <FormControl sx={{ width: { xs: "100%", sm: "45%" }, mb: 1.5 }}>
                             <TextField
                                 required
                                 id="standard-required"
@@ -744,6 +850,32 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                                 <AttachFileIcon sx={{ fontSize: "40px", color: "#222", transform: "rotate(45deg)", cursor: "pointer" }} />
                                 <Box component="p">{coverLetterName}</Box>
                             </FileReaderInput>
+                        </FormControl> */}
+                    </Box>
+                    <Box sx={{ display: { xs: "inherit", sm: "flex" }, justifyContent: "space-between" }}>
+                        <FormControl sx={{ width: "100%" }}>
+                        <FormLabel component="legend" sx={{ mt: 3}}>{ translate("reason_text") }</FormLabel>
+                            <TextField
+                                required
+                                id="standard-multiline-static"
+                                label={ translate("message") }
+                                multiline
+                                rows={4}
+                                placeholder={translate("write_msg")}
+                                value={reasonText}
+                                onChange={(e) => setReasonText(e.target.value)}
+                                variant="standard"
+                                sx={{
+                                    width: "100%",
+                                    my: 5,
+                                    "& .MuiInput-input:focus": {
+                                        color: "#222"
+                                    },
+                                    "& .MuiInput-underline:after": {
+                                        borderBottomColor: "#40fbdc",
+                                    }
+                                }}
+                            />
                         </FormControl>
                     </Box>
                     <Box component="p" sx={{ color: "red", mb: 3 }}>

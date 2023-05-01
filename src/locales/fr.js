@@ -11,13 +11,13 @@ const fr = {
   our_services: "Nos services",
   why_ollorun: "Pourquoi Ollorun",
   why_description: `<h4>Ollorun s'implante dans l'univers des cryptoactifs et de la technologie blockchain depuis 2020</h4><br/><br />
-  <p style="font-size: 20px">Le site ollorun.com est votre porte d'entreé dans l'écosystéme Ozeety.</p>`,
+  <p style="font-size: 20px">Le site ollorun.com est votre porte d'entrée dans l'écosystéme Ozeety.</p>`,
   our_advisors: "Nos conseillers",
   // certified_partners: "Partenaires certifiés",
   events: "Événements",
   contacts: "Contacts",
   academy: "academy",
-  become_advisor: "Devenir conseiller",
+  become_advisor: "Nous rejoindre",
   become_advisor_desc: "Plongez dans le monde de la DeFi !",
   community: "Communauté",
   hero_title1: "Nous sommes Ollorun",
@@ -642,7 +642,7 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   get_started: `Démarrer`,
   subscribe_newsletter: `Abonnez-vous à notre newsletter`,
   your_email_address: `Votre adresse email`,
-  sign_up: `Devenir Conseiller`,
+  sign_up: `Nous Rejoindre`,
   blockchain_technology_pos: `<p>Technologie Blockchain<br/> PoS & Smart Contract
   </p>`,
   view_on_flashxchange: `Voir sur FlashXchanger`,
@@ -683,7 +683,7 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   plus importante dans notre société.`,
   vision: `Notre vision`,
   vision_content: `Ollorun, c'est avant tout une communauté qui
-  promeut l'adaoption massive de I'OZTG dans le
+  promeut l'adoption massive de I'OZTG dans le
   quotidien de chacun.<br/><br/>
   Prendre part à Ollorun, c'est être acteur de la
   blockchain Ozeety et contribuer activement à son
@@ -707,6 +707,7 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   pool: `Pool Masternode`,
   required_desc: `*Les champs marqués d'une étoile sont obligatoires.`,
   send: `Envoyer`,
+  postal_code: `Code postal`,
   current_field_activity: `Activité actuelle`,
   financial_advisor: `Conseiller financier`,
   city_country: `Ville/Pays`,
@@ -715,6 +716,12 @@ Nous vous encourageons à lire les déclarations de confidentialité des autres 
   consultant_name: `Nom du conseiller`,
   company_name: `Nom de l’entreprise`,
   cover_letter: `Lettre de motivation`,
+  cif_letter:  `*Êtes-vous à jour de votre formation CIF (Conseiller en Investissements Financiers)?`,
+  amf_letter: `*Êtes-vous certifié AMF (Autorité des Marchés Financiers)?`,
+  cv_attach_confirm_letter: `Veuillez joindre votre CV et tout autre document pertinent pour appuyer votre candidature.`,
+  yes: `Oui`,
+  attached_cv: `J'ai joint mon CV.`,
+  attached_other_doc: ` J'ai joint d'autres documents pertinents.`,
   go: `Go`,
   our_solutions: `Nos solutions`,
   cancel: `Annuler`,

@@ -23,6 +23,9 @@ const BoxStyle = styled(Box)({
   p: {
     color: "#828082",
   },
+  "&a:hover": {
+    color: "#e1b559",
+  },
   // ul: {
   //   paddingInlineStart: "50px",
   // },

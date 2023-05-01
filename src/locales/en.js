@@ -19,7 +19,7 @@ const en = {
   events: "Events",
   contacts: "Contacts",
   academy: "academy",
-  become_advisor: "Become advisor",
+  become_advisor: "Join us",
   become_advisor_desc: "Immerse yourself in the world of DeFi!",
   hero_title1: "We are Ollorun",
   hero_title2: "Immerse yourself<br /> in the world of DeFi!",
@@ -139,7 +139,7 @@ const en = {
   <br />
   <h4>Contact us</h4>
   <p>
-    Customer service: <a href="mailto:support@ollorun.com" style="color: white">Write to us here</a>
+    Customer service: <a href="mailto:support@ollorun.com" style="color: white;">Write to us here</a>
     <br />
     <br />
     Commercial team: <a href="mailto:commercial@ollorun.com" style="color: white">Write to us here</a>
@@ -726,7 +726,7 @@ statements on the other Platforms you visit.
   get_started: `Get Started`,
   subscribe_newsletter: `Subscribe to our newsletter`,
   your_email_address: `Your email address`,
-  sign_up: `Become Advisor`,
+  sign_up: `Join Us`,
   blockchain_technology_pos: `Blockchain Technology<br/> PoS & Smart Contract`,
   view_on_flashxchange: `View on FlashXchanger`,
   node: `Node`,
@@ -787,14 +787,22 @@ statements on the other Platforms you visit.
   pool: `Pool`,
   required_desc: `*Fields marked with a star are mandatory.`,
   send: `Send`,
-  current_field_activity: `Current activity`,
-  financial_advisor: `Financial advisor`,
+  postal_code: `Postal Code`,
+  financial_advisor: `123456`,
   city_country: `City/Country`,
   city: `City`,
   country: `Country`,
   consultant_name: `Consultant name`,
   company_name: `Company name`,
   cover_letter: `Cover letter`,
+  cif_letter:  `Are you up to date with your CIF (Financial Investment Advisor) training?`,
+  amf_letter: `Are you AMF (Financial Markets Authority) certified?`,
+  cv_attach_confirm_letter: `Please attach your resume and any other relevant documents to support your application.`,
+  yes: `Yes`,
+  attached_cv: `I have attached my resume.`,
+  attached_other_doc: `I have attached other relevant documents.`,
+  reason_text: `Please explain why you are interested in this position and what you think
+  you can bring to the company as an independent advisor`,
   go: `Go`,
   our_solutions: `Our solutions`,
   cancel: `Cancel`,

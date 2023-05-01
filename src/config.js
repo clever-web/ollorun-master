@@ -68,7 +68,7 @@ export const defaultLang = allLangs[0]; // English
 export const BASIC_URL = "https://ollorun.com";
 // export const BASIC_URL = "http://localhost:3000";
 
-export const API_URL = "https://api.ollorun.com";
+export const API_URL = "http://localhost:5000";
 // export const API_URL = "http://localhost:5000";
 
 export const CONTACT_EMAIL = "support@ollorun.com";
