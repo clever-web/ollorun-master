@@ -72,13 +72,13 @@ export default function HomePage() {
       <FinanceService data={financeservice} />
       {/* <Academy data={academy} /> */}
       <AppStore />
-      <ListStyle sx={{ right: { xs: "8px", sm: "48px" } }}>
+      {/* <ListStyle sx={{ right: { xs: "8px", sm: "48px" } }}>
         {dotList.map((e, index) => (
           <li key={index} className={e.state}>
             <a href={e.href}></a>
           </li>
         ))}
-      </ListStyle>
+      </ListStyle> */}
     </Page>
   );
 }

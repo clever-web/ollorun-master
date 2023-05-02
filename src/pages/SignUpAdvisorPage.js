@@ -199,7 +199,7 @@ export default function SignUpAdvisorPage() {
                                     <Typography
                                         id="transition-modal-title"
                                         variant="h3"
-                                        sx={{ textAlign: "center", color: "rgb(18, 29, 51)", textTransform: "capitalize" }}
+                                        sx={{ textAlign: "center", color: "rgb(18, 29, 51)" }}
                                     >
                                         {translate("become_advisor")}
                                     </Typography>

@@ -142,7 +142,7 @@ export default function HomeHero(isNav) {
                 <MotionViewport sx={{ height: "100%" }}>
                     <Box
                         sx={{
-                            pt: "10%",
+                            pt: { md: "15%", sm:"20%", xs: "25%" },
                         }}
                     >
                         <Stack

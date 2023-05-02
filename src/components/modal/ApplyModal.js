@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import ReCAPTCHA from "react-google-recaptcha"
 import { toast } from 'react-toastify';
 import axios from 'axios'
@@ -412,29 +412,27 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
     const [cvName, setCvName] = React.useState("");
     // const [coverLetterName, setCoverLetterName] = React.useState("");
     const [checkList, setCheckList] = React.useState({
-        cifYes: false,
-        amfYes: false,
-        cvYes: false,
-        cvNo: false
+        cif: undefined,
+        amf: undefined
     });
     const [reasonText, setReasonText] = React.useState("");
 
     const { translate, currentLang } = useLocales();
 
     const handleChangeCifYes = () => {
-        setCheckList({ ...checkList, cifYes: !checkList.cifYes })
+        setCheckList({ ...checkList, cif: true })
+    }
+
+    const handleChangeCifNo = () => {
+        setCheckList({ ...checkList, cif: false })
     }
 
     const handleChangeAmfYes = () => {
-        setCheckList({ ...checkList, amfYes: !checkList.amfYes })
+        setCheckList({ ...checkList, amf: true })
     }
 
-    const handleChangeCvYes = () => {
-        setCheckList({ ...checkList, cvYes: !checkList.cvYes })
-    }
-
-    const handleChangeCvNo = () => {
-        setCheckList({ ...checkList, cvNo: !checkList.cvNo })
+    const handleChangeAmfNo = () => {
+        setCheckList({ ...checkList, amf: false })
     }
 
     const handleChangeCV = (e, results) => {
@@ -445,7 +443,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                 setCvName(file.name);
             }
             else
-                notifyToast("error", 'Only PDF or DOCX is supported!');
+                notifyToast("error", 'Only PDF, DOCX, JPG and PNG  are supported!');
         });
     }
 
@@ -474,10 +472,8 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
         setCityCountry(""); setPostalCode(""); setCapchaResult("");
         setCvName(""); setCv(null); setCoverLetter(null);
         setCheckList({
-            cifYes: false,
-            amfYes: false,
-            cvYes: false,
-            cvNo: false
+            cif: undefined,
+            amf: undefined
         });
         setReasonText("");
     }
@@ -504,17 +500,16 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
             try {
                 const response = await axios({
                     method: "post",
-                    url: `${API_URL}/user/join-us`,
+                    url: `${API_URL}/api/join`,
                     data: {
                         fName: fName,
                         lName: lName,
                         phone: phone,
                         email: email,
-                        cityCountry: cityCountry,
                         postalCode: postalCode,
+                        cityCountry: cityCountry,
                         cv: cv,
-                        // coverLetter: coverLetter,
-                        interest: checkList,
+                        checkList: checkList,
                         reasonText: reasonText,
                         toEmail: ADVISOR_JOB_EMAIL,
                     },
@@ -548,6 +543,10 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                 notifyToast("error", "City/Country Format is not correct!");
             if (!cvName)
                 notifyToast("error", "CV is required!");
+            if (checkList.cif === undefined)
+                notifyToast("error", "THe CIF training Selection is required!");
+            if (checkList.amf === undefined)
+            notifyToast("error", "THe AMF certified Selection is required!");
             return false;
         }
     }
@@ -575,7 +574,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                     <Typography
                         id="transition-modal-title"
                         variant="h3"
-                        sx={{ textAlign: "center", color: "rgb(18, 29, 51)", textTransform: "capitalize" }}
+                        sx={{ textAlign: "center", color: "rgb(18, 29, 51)" }}
                     >
                         {translate("become_advisor")}
                     </Typography>
@@ -734,9 +733,22 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             <FormGroup>
                                 <FormControlLabel
                                     control={
-                                        <Checkbox checked={ checkList.cifYes } onChange={ handleChangeCifYes } name="cifYes" />
+                                        <Checkbox checked={  checkList.cif == true } onClick={ handleChangeCifYes } name="Yes" />
                                     }
                                     label={ translate("yes") }
+                                    sx={{
+                                        color: "rgb(18, 29, 51)",
+                                        "& .MuiFormControlLabel-label": {
+                                            color: "rgb(18, 29, 51) !important"
+                                        },
+                                        "& .Mui-checked": { color: "#40fbdc !important" }
+                                    }}
+                                />
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox checked={ checkList.cif == false } onClick={ handleChangeCifNo } name="No" />
+                                    }
+                                    label={ translate("cif_aif_no") }
                                     sx={{
                                         color: "rgb(18, 29, 51)",
                                         "& .MuiFormControlLabel-label": {
@@ -754,9 +766,22 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             <FormGroup>
                                 <FormControlLabel
                                     control={
-                                        <Checkbox checked={ checkList.amfYes } onChange={ handleChangeAmfYes } name="amfYes" />
+                                        <Checkbox checked={ checkList.amf == true } onChange={ handleChangeAmfYes } name="Yes" />
                                     }
                                     label={ translate("yes") }
+                                    sx={{
+                                        color: "rgb(18, 29, 51)",
+                                        "& .MuiFormControlLabel-label": {
+                                            color: "rgb(18, 29, 51) !important"
+                                        },
+                                        "& .Mui-checked": { color: "#40fbdc !important" }
+                                    }}
+                                />
+                                <FormControlLabel
+                                    control={
+                                        <Checkbox checked={ checkList.amf == false } onChange={ handleChangeAmfNo } name="No" />
+                                    }
+                                    label={ translate("cif_aif_no") }
                                     sx={{
                                         color: "rgb(18, 29, 51)",
                                         "& .MuiFormControlLabel-label": {
@@ -768,7 +793,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             </FormGroup>
                         </FormControl>
                     </Box>
-                    <Box>
+                    {/* <Box>
                         <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
                             <FormLabel component="legend" sx={{ mb: 2 }}>{ translate("cv_attach_confirm_letter") }</FormLabel>
                             <FormGroup>
@@ -800,7 +825,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                                 />
                             </FormGroup>
                         </FormControl>
-                    </Box>
+                    </Box> */}
 
                     <Box sx={{ display: { xs: "inherit", sm: "flex" }, justifyContent: "space-between" }}>
                         <FormControl sx={{ width: { xs: "100%", sm: "45%" }, }}>
@@ -915,10 +940,11 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
 
 export const checkFileType = (file) => {
     if (file.type !== "application/pdf" &&
-        file.type !== "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+        file.type !== "application/vnd.openxmlformats-officedocument.wordprocessingml.document" &&
+        file.type !== "image/png" && file.type !== "image/jpeg")
         return false;
-
-    else return true;
+    else 
+        return true;
 }
 
 export const notifyToast = (type, subject) => {

@@ -55,12 +55,15 @@ const ContactComponent = () => {
         setFName(""); setLName(""); setPhone(""); setEmail("");
         setUserName(""); setOrdernumber(""); setWalletNumber("");
         setReceipt(null); setReceiptName(""); setSubject("");
-        setMessage(""); setCapchaResult("");
+        setMessage(""); 
+        // setCapchaResult("");
     }
 
     const validateForm = () => {
         if (fName && lName && email && validateEmail(email) &&
-            phone && validatePhone(phone) && subject && capchaResult && message
+            phone && validatePhone(phone) && subject 
+            // && capchaResult 
+            && message
         )
             return true;
         else return false;
@@ -129,8 +132,8 @@ const ContactComponent = () => {
                 notifyToast("error", 'Subject is required!');
             if (!message)
                 notifyToast("error", 'Message is required!');
-            if (!capchaResult)
-                notifyToast("error", 'Verification is required!');
+            // if (!capchaResult)
+            //     notifyToast("error", 'Verification is required!');
         }
     }
 
