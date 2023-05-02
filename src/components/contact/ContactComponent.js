@@ -120,8 +120,8 @@ const ContactComponent = () => {
                 notifyToast("error", 'Phone Number required!');
             if (!validatePhone(phone))
                 notifyToast("error", 'Phone Number Format is not correct!');
-            if (!username)
-                notifyToast("error", 'Ollorun Username is required!');
+            // if (!username)
+            //     notifyToast("error", 'Ollorun Username is required!');
             // if (!ordernumber)
             //     notifyToast("error", 'Order Number is required!');
             // if (!walletnumber)
@@ -306,7 +306,7 @@ const ContactComponent = () => {
                         </FormControl>
                         <FormControl sx={{ width: { xs: "100%", sm: "45%" }, }}>
                             <TextField
-                                // required
+                                required
                                 id="standard-required"
                                 label={translate("attached_file")}
                                 htmlFor="my-file-input"

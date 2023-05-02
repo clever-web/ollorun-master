@@ -734,7 +734,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
 
                     <Box>
                         <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
-                            <FormLabel component="legend" sx={{ mb: 2 }}>{translate("cif_letter")}</FormLabel>
+                            <FormLabel component="legend" sx={{ mb: 2 }} required>{translate("cif_letter")}</FormLabel>
                             <FormGroup>
                                 <FormControlLabel
                                     control={
@@ -767,7 +767,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                     </Box>
                     <Box>
                         <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
-                            <FormLabel component="legend" sx={{ mb: 2 }}>{translate("amf_letter")}</FormLabel>
+                            <FormLabel component="legend" sx={{ mb: 2 }} required>{translate("amf_letter")}</FormLabel>
                             <FormGroup>
                                 <FormControlLabel
                                     control={

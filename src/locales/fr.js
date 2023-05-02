@@ -108,28 +108,28 @@ s'appuyant sur la technologie de la Blockchain Ozeety et de son propre coin OZTG
   PrivacyPolicy: "Politique de confidentialité ",
   TermPageContent: `<h4>Édition du site</h4>
   <p>
-    Nom de la société: Ollorun Finance LTD
+    Nom de la société : Ollorun Finance LTD
     <br />
     <br />
-    Numéro d’enregistrement: 12660658
+    Numéro d’enregistrement : 12660658
     <br />
     <br />
-    Lieu d’enregistrement:  Royaume-Uni
+    Lieu d’enregistrement :  Royaume-Uni
     <br />
     <br />
-    Adresse d’enregistrement: 45 Albemarle Street, London, UK, W1S 4JL
+    Adresse d’enregistrement : 45 Albemarle Street, London, UK, W1S 4JL
   </p>
   <br />
   <br />
   <h4>Nous contacter</h4>
   <p>
-    Service client: <a href="mailto:support@ollorun.com" style="color: white">Nous écrire ici</a>
+    Service client : <a href="mailto:support@ollorun.com" style="color: white">Nous écrire ici</a>
     <br />
     <br />
-    Équipe commerciale: <a href="mailto:commercial@ollorun.com" style="color: white">Nous écrire ici</a>
+    Équipe commerciale : <a href="mailto:commercial@ollorun.com" style="color: white">Nous écrire ici</a>
     <br />
     <br />
-    Postuler le poste de conseiller: <a href="mailto:job@ollorun.com" style="color: white">Nous écrire ici</a>
+    Postuler le poste de conseiller : <a href="mailto:job@ollorun.com" style="color: white">Nous écrire ici</a>
   </p>
   <br />
   <br />
