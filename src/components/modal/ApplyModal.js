@@ -404,8 +404,8 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
     const [lName, setLName] = React.useState("");
     const [phone, setPhone] = React.useState("");
     const [email, setEmail] = React.useState("");
-    const [cityCountry, setCityCountry] = React.useState("");
-    const [postalCode, setPostalCode] = React.useState("");
+    const [country, setCountry] = React.useState("");
+    const [city, setCity] = React.useState("");
     const [capchaResult, setCapchaResult] = React.useState("");
     const [cv, setCv] = React.useState(null);
     const [coverLetter, setCoverLetter] = React.useState(null);
@@ -469,7 +469,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
 
     const emptyForm = () => {
         setFName(""); setLName(""); setPhone(""); setEmail("");
-        setCityCountry(""); setPostalCode(""); setCapchaResult("");
+        setCountry(""); setCity(""); setCapchaResult("");
         setCvName(""); setCv(null); setCoverLetter(null);
         setCheckList({
             cif: undefined,
@@ -484,10 +484,13 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
     // }
 
     const validateForm = () => {
-        validatePhone(phone)
+        // validatePhone(phone)
+        console.log(capchaResult);
         if (fName && lName && phone && validatePhone(phone) && email &&
-            validateEmail(email) && capchaResult && cityCountry && cityCountry.includes("/") &&
-            postalCode && cv && cvName && coverLetter)
+            validateEmail(email)
+             && capchaResult
+              && country &&
+            city && cv && cvName && reasonText)
             return true;
         else return false;
     }
@@ -495,7 +498,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
     const submitForm = async () => {
         if (validateForm()) {
             // submit form
-            handleModalClose(false);
+            // handleModalClose(false);
             // emptyForm();
             try {
                 const response = await axios({
@@ -506,15 +509,15 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                         lName: lName,
                         phone: phone,
                         email: email,
-                        postalCode: postalCode,
-                        cityCountry: cityCountry,
+                        city: city,
+                        country: country,
                         cv: cv,
                         checkList: checkList,
                         reasonText: reasonText,
                         toEmail: ADVISOR_JOB_EMAIL,
-                    },
+                    }
                 })
-                if (!response.data.error) {
+                if (!response.data.error && response.data.status === 200) {
                     notifyToast("success", "Successfully Registered!")
                 }
                 else
@@ -537,16 +540,18 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                 notifyToast("error", "Email is required!");
             if (!validateEmail(email))
                 notifyToast("error", "Email Format is not correct!");
-            if (!postalCode)
-                notifyToast("error", "Postal Code is required!");
-            if (!cityCountry.includes("/"))
-                notifyToast("error", "City/Country Format is not correct!");
+            if (!city)
+                notifyToast("error", "City is required!");
             if (!cvName)
                 notifyToast("error", "CV is required!");
             if (checkList.cif === undefined)
                 notifyToast("error", "THe CIF training Selection is required!");
             if (checkList.amf === undefined)
-            notifyToast("error", "THe AMF certified Selection is required!");
+                notifyToast("error", "THe AMF certified Selection is required!");
+            if (!reasonText)
+                notifyToast("error", "Message is required!");
+            if (!capchaResult)
+                notifyToast("error", 'Verification is required!');
             return false;
         }
     }
@@ -687,11 +692,11 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             <TextField
                                 required
                                 id="standard-required"
-                                label={translate("postal_code")}
+                                label={translate("city")}
                                 variant="standard"
-                                placeholder={translate("financial_advisor")}
-                                value={postalCode}
-                                onChange={(e) => setPostalCode(e.target.value)}
+                                placeholder={translate("city_placeholder")}
+                                value={city}
+                                onChange={(e) => setCity(e.target.value)}
                                 sx={{
                                     width: "100%",
                                     my: 5,
@@ -708,11 +713,11 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                             <TextField
                                 required
                                 id="standard-required"
-                                label={translate("city_country")}
+                                label={translate("country")}
                                 variant="standard"
-                                placeholder='Paris / France'
-                                value={cityCountry}
-                                onChange={(e) => setCityCountry(e.target.value)}
+                                placeholder={ translate("country_placeholder") }
+                                value={country}
+                                onChange={(e) => setCountry(e.target.value)}
                                 sx={{
                                     width: "100%",
                                     my: 5,
@@ -827,8 +832,9 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                         </FormControl>
                     </Box> */}
 
-                    <Box sx={{ display: { xs: "inherit", sm: "flex" }, justifyContent: "space-between" }}>
-                        <FormControl sx={{ width: { xs: "100%", sm: "45%" }, }}>
+                    <Box>
+                        <FormControl sx={{ my: 3 }} component="fieldset" variant="standard">
+                        <FormLabel component="legend">{ translate("cv_attach_confirm_letter") }</FormLabel>
                             <TextField
                                 required
                                 id="standard-required"
@@ -839,7 +845,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                                 disabled
                                 sx={{
                                     width: "100%",
-                                    mt: 5,
+                                    mt: 2,
                                     mb: 1,
                                 }}
                             />

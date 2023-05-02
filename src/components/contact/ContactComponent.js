@@ -61,8 +61,8 @@ const ContactComponent = () => {
 
     const validateForm = () => {
         if (fName && lName && email && validateEmail(email) &&
-            phone && validatePhone(phone) && subject 
-            // && capchaResult 
+            phone && validatePhone(phone) && subject && username
+            && capchaResult 
             && message
         )
             return true;
@@ -120,8 +120,8 @@ const ContactComponent = () => {
                 notifyToast("error", 'Phone Number required!');
             if (!validatePhone(phone))
                 notifyToast("error", 'Phone Number Format is not correct!');
-            // if (!username)
-            //     notifyToast("error", 'Ollorun Username is required!');
+            if (!username)
+                notifyToast("error", 'Ollorun Username is required!');
             // if (!ordernumber)
             //     notifyToast("error", 'Order Number is required!');
             // if (!walletnumber)
@@ -132,8 +132,8 @@ const ContactComponent = () => {
                 notifyToast("error", 'Subject is required!');
             if (!message)
                 notifyToast("error", 'Message is required!');
-            // if (!capchaResult)
-            //     notifyToast("error", 'Verification is required!');
+            if (!capchaResult)
+                notifyToast("error", 'Verification is required!');
         }
     }
 
