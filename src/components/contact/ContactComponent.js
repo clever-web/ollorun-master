@@ -77,8 +77,10 @@ const ContactComponent = () => {
                 const response = await axios({
                     method: "post",
                     Accept: 'application/json',
-                    'Referrer Policy': 'strict-rigin-when-cross-origin',
                     url: `${API_URL}api/support`,
+                    headers: {
+                        'content-type': 'application/json'
+                    },
                     data: {
                         // type: isPack ? "pack" : "technical",
                         fName: fName,
