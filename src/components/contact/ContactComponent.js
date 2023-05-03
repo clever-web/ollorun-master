@@ -101,8 +101,7 @@ const ContactComponent = () => {
                     emptyForm();
                 }
                 else {
-                    console.log(response)
-                    notifyToast("error", 'Something Went Wrong!');
+                    notifyToast("error", 'Something happened on server!');
                 }
             } catch (error) {
                 console.log(error)
