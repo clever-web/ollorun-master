@@ -503,10 +503,11 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
             try {
                 const response = await axios({
                     method: "post",
-                    Accept: 'application/json',
                     url: `${API_URL}api/join`,
                     headers: {
-                        'content-type': 'application/json'
+                        'content-type': 'application/json',
+                        Accept: 'application/json',
+                        "Access-Control-Allow-Origin": "*"
                     },
                     data: {
                         fName: fName,

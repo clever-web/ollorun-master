@@ -76,10 +76,11 @@ const ContactComponent = () => {
             try {
                 const response = await axios({
                     method: "post",
-                    Accept: 'application/json',
                     url: `${API_URL}api/support`,
                     headers: {
-                        'content-type': 'application/json'
+                        'content-type': 'application/json',
+                        Accept: 'application/json',
+                        "Access-Control-Allow-Origin": "*"
                     },
                     data: {
                         // type: isPack ? "pack" : "technical",
