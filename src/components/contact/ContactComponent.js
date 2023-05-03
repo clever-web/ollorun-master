@@ -76,6 +76,7 @@ const ContactComponent = () => {
             try {
                 const response = await axios({
                     method: "post",
+                    Accept: 'application/json',
                     url: `${API_URL}api/support`,
                     data: {
                         // type: isPack ? "pack" : "technical",
