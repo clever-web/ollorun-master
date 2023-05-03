@@ -503,7 +503,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
             try {
                 const response = await axios({
                     method: "post",
-                    url: `${API_URL}/api/join`,
+                    url: `${API_URL}api/join`,
                     data: {
                         fName: fName,
                         lName: lName,
@@ -517,7 +517,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                         toEmail: ADVISOR_JOB_EMAIL,
                     }
                 })
-                if (!response.data.error && response.data.status === 200) {
+                if (!response.data.error && response.status === 200) {
                     notifyToast("success", "Successfully Registered!")
                 }
                 else

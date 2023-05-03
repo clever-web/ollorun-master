@@ -69,8 +69,6 @@ const ContactComponent = () => {
         else return false;
     }
 
-
-
     const submitForm = async () => {
 
         if (validateForm()) {
@@ -78,7 +76,7 @@ const ContactComponent = () => {
             try {
                 const response = await axios({
                     method: "post",
-                    url: `${API_URL}/api/support`,
+                    url: `${API_URL}api/support`,
                     data: {
                         // type: isPack ? "pack" : "technical",
                         fName: fName,
@@ -94,7 +92,7 @@ const ContactComponent = () => {
                         toEmail: CONTACT_EMAIL
                     }
                 })
-                if (!response.data.error && response.data.status === 200) {
+                if (!response.data.error && response.status === 200) {
                     notifyToast("success", 'Thanks for contacting us!');
                     emptyForm();
                 }
