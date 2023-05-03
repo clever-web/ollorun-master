@@ -505,7 +505,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                     method: "post",
                     url: `${API_URL}api/join`,
                     headers: {
-                        'content-type': 'application/json',
+                        // 'content-type': 'application/json',
                         "Access-Control-Allow-Origin": "*"
                     },
                     data: {
