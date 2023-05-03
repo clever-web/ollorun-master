@@ -57,9 +57,13 @@ export const allLangs = [
     icon: "/assets/icons/flags/ic_flag_fr.svg",
   },
 ];
-
-// export const recaptchaKey = "6Ld9gZQjAAAAADLQTD0LNzIv64zQcMpKAW46KJ89";
-export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
+// For localhost
+export const recaptchaKey = "6Ld9gZQjAAAAADLQTD0LNzIv64zQcMpKAW46KJ89";
+// For netlify
+// export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
+// For ollorun.com 
+// export const recaptchaKey = "6LfrrdklAAAAAOqwE_jVHk3JIKOe8m-xlA4hm5mc";
+// export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
 
 export const GOOGLE_MAP_API_KAY = "AIzaSyBl2oJaWVIAGrzYmMPeHSm0IQnwVm0WXMU";
 // export const GOOGLE_MAP_API_KAY = "AIzaSyAoGoRxR9Rn9VqvzdAnEHO0DScyv-YDqtY";

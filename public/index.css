@@ -281,6 +281,12 @@ p>a:hover {
   h4 {
     font-size: 1.8rem !important;
   }
+}
+
+@media (min-width:100px) and (max-width:600px) {
+  .css-ok8nnn {
+    display: none !important;
+  }
 }​
 
 
