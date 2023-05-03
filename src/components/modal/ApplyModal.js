@@ -504,6 +504,7 @@ export const AdvisorModal = ({ modalOpen, handleModalClose }) => {
                 const response = await axios({
                     method: "post",
                     Accept: 'application/json',
+                    'Referrer Policy': 'strict-rigin-when-cross-origin',
                     url: `${API_URL}api/join`,
                     data: {
                         fName: fName,
