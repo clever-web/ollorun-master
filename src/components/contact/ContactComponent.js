@@ -79,7 +79,6 @@ const ContactComponent = () => {
                     url: `${API_URL}api/support`,
                     headers: {
                         'content-type': 'application/json',
-                        Accept: 'application/json',
                         "Access-Control-Allow-Origin": "*"
                     },
                     data: {
