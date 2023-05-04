@@ -58,9 +58,9 @@ export const allLangs = [
   },
 ];
 // For localhost
-export const recaptchaKey = "6Ld9gZQjAAAAADLQTD0LNzIv64zQcMpKAW46KJ89";
+// export const recaptchaKey = "6Ld9gZQjAAAAADLQTD0LNzIv64zQcMpKAW46KJ89";
 // For netlify
-// export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
+export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
 // For ollorun.com 
 // export const recaptchaKey = "6LfrrdklAAAAAOqwE_jVHk3JIKOe8m-xlA4hm5mc";
 // export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
@@ -74,7 +74,7 @@ export const defaultLang = allLangs[0]; // English
 export const BASIC_URL = "https://ollorun.com";
 // export const BASIC_URL = "http://localhost:3000";
 
-export const API_URL = "http://155.138.140.202:5000/";
+export const API_URL = "https://155.138.140.202";
 // export const API_URL = "http://localhost:5000";
 
 export const CONTACT_EMAIL = "support@ollorun.com";
