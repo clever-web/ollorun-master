@@ -60,10 +60,9 @@ export const allLangs = [
 // For localhost
 // export const recaptchaKey = "6Ld9gZQjAAAAADLQTD0LNzIv64zQcMpKAW46KJ89";
 // For netlify
-export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
-// For ollorun.com 
-// export const recaptchaKey = "6LfrrdklAAAAAOqwE_jVHk3JIKOe8m-xlA4hm5mc";
 // export const recaptchaKey = "6Lf2kNYlAAAAABiKOc3ZtWgSNzB6Ll0zros3hDNK";
+// For ollorun.com 
+export const recaptchaKey = "6LfrrdklAAAAAOqwE_jVHk3JIKOe8m-xlA4hm5mc";
 
 export const GOOGLE_MAP_API_KAY = "AIzaSyBl2oJaWVIAGrzYmMPeHSm0IQnwVm0WXMU";
 // export const GOOGLE_MAP_API_KAY = "AIzaSyAoGoRxR9Rn9VqvzdAnEHO0DScyv-YDqtY";
