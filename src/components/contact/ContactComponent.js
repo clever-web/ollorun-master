@@ -105,6 +105,7 @@ const ContactComponent = () => {
                 }
             } catch (error) {
                 console.log(error)
+                notifyToast("error", "Something Went Wrong!")
             }
 
         }
