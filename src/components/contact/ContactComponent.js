@@ -308,7 +308,7 @@ const ContactComponent = () => {
                         </FormControl>
                         <FormControl sx={{ width: { xs: "100%", sm: "45%" }, }}>
                             <TextField
-                                required
+                                // required
                                 id="standard-required"
                                 label={translate("attached_file")}
                                 htmlFor="my-file-input"
