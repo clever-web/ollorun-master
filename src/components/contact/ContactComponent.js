@@ -61,7 +61,7 @@ const ContactComponent = () => {
 
     const validateForm = () => {
         if (fName && lName && email && validateEmail(email) &&
-            phone && validatePhone(phone) && subject && username
+            phone && validatePhone(phone) && subject
             && capchaResult 
             && message
         )
@@ -96,7 +96,7 @@ const ContactComponent = () => {
                         toEmail: CONTACT_EMAIL
                     }
                 })
-                if (!response.data.error && response.status === 200) {
+                if (!response.error && response.status === 200) {
                     notifyToast("success", 'Thanks for contacting us!');
                     emptyForm();
                 }
