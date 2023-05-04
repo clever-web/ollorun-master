@@ -78,7 +78,7 @@ const ContactComponent = () => {
                     method: "post",
                     url: `${API_URL}api/support`,
                     headers: {
-                        'content-type': 'application/json',
+                        // 'content-type': 'application/json',
                         "Access-Control-Allow-Origin": "*"
                     },
                     data: {
@@ -105,7 +105,7 @@ const ContactComponent = () => {
                 }
             } catch (error) {
                 console.log(error)
-                notifyToast("error", "Something Went Wrong!")
+                notifyToast("error", "Something Went Wrong!");
             }
 
         }
