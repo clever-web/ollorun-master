@@ -37,18 +37,18 @@ export default function Router() {
         { path: "support", element: <ContactPage /> },
         { path: "saveadvisor/*", element: <SaveAdvisorPage /> },
         { path: "savenewevent/*", element: <SaveEventPage /> },
-        { path: "signup/client", element: <SignUpClientPage /> },
-        { path: "signup/advisor", element: <SignUpAdvisorPage /> },
+        // { path: "signup/client", element: <SignUpClientPage /> },
+        // { path: "signup/advisor", element: <SignUpAdvisorPage /> },
       ],
-    },
-    {
-      path: "*",
-      children: [
-        { path: "404", element: <Page404 /> },
-        { path: "*", element: <Navigate to="/404" replace /> },
-      ],
-    },
-    { path: "*", element: <Navigate to="/404" replace /> },
+    }
+    // {
+    //   path: "*",
+    //   children: [
+    //     { path: "404", element: <Page404 /> },
+    //     { path: "*", element: <Navigate to="/404" replace /> },
+    //   ],
+    // },
+    // { path: "*", element: <Navigate to="/404" replace /> },
   ]);
 }
 
@@ -64,6 +64,6 @@ const EventsPage = Loadable(lazy(() => import("../pages/EventsPage")));
 const ContactPage = Loadable(lazy(() => import("../pages/ContactPage")));
 const SaveAdvisorPage = Loadable(lazy(() => import("../pages/SaveAdvisorPage")));
 const SaveEventPage = Loadable(lazy(() => import("../pages/SaveEventPage")));
-const SignUpClientPage = Loadable(lazy(() => import("../pages/SignUpClientPage")));
-const SignUpAdvisorPage = Loadable(lazy(() => import("../pages/SignUpAdvisorPage")));
+// const SignUpClientPage = Loadable(lazy(() => import("../pages/SignUpClientPage")));
+// const SignUpAdvisorPage = Loadable(lazy(() => import("../pages/SignUpAdvisorPage")));
 
