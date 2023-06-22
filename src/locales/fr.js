@@ -129,7 +129,6 @@ s'appuyant sur la technologie de la Blockchain Ozeety et de son propre coin OZTG
     Équipe commerciale : <a href="mailto:commercial@ollorun.com" style="color: white">Nous écrire ici</a>
     <br />
     <br />
-    Postuler le poste de conseiller : <a href="mailto:job@ollorun.com" style="color: white">Nous écrire ici</a>
   </p>
   <br />
   <br />

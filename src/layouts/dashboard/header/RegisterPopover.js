@@ -66,7 +66,7 @@ export default function RegisterPopover({ isNav }) {
 
   return (
     <>
-      <Box
+      {/* <Box
         component="p"
         sx={{
           background: "linear-gradient(92.94deg, #3FFBDC 4.54%, #E1B559 93.54%)",
@@ -87,7 +87,7 @@ export default function RegisterPopover({ isNav }) {
         // if the key is 1, the client modal opened.
       >
         {translate("sign_up")}
-      </Box>
+      </Box> */}
 
       <MenuPopover
         open={Boolean(open)}

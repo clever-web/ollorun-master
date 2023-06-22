@@ -144,8 +144,6 @@ const en = {
     <br />
     Commercial team: <a href="mailto:commercial@ollorun.com" style="color: white">Write to us here</a>
     <br />
-    <br />
-    Apply to become an advisor: <a href="mailto:job@ollorun.com" style="color: white">Write to us here</a>
   </p>
   <br />
   <br />
